@@ -8,6 +8,16 @@
   </url>
   
   <url>
+    <loc>https://felixmon.github.io/post/if-this-works/</loc>
+    <lastmod>2018-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://felixmon.github.io/post/the-third-file/</loc>
+    <lastmod>2018-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://felixmon.github.io/tags/blog/</loc>
     <lastmod>2018-09-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -19,13 +29,13 @@
   </url>
   
   <url>
-    <loc>https://felixmon.github.io/tags/example/</loc>
+    <loc>https://felixmon.github.io/categories/example/</loc>
     <lastmod>2018-09-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://felixmon.github.io/categories/example/</loc>
+    <loc>https://felixmon.github.io/tags/example/</loc>
     <lastmod>2018-09-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

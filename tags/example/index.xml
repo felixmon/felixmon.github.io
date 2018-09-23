@@ -30,14 +30,5 @@
       <description>dangdang</description>
     </item>
     
-    <item>
-      <title>number 3 article</title>
-      <link>https://felixmon.github.io/post/the-third-file/</link>
-      <pubDate>Sun, 23 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://felixmon.github.io/post/the-third-file/</guid>
-      <description>some random string to make this filled</description>
-    </item>
-    
   </channel>
 </rss>

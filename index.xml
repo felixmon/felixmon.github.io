@@ -6,10 +6,21 @@
     <description>Recent content on Felix Mon Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 23 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Sep 2018 00:44:54 +0800</lastBuildDate>
     
 	<atom:link href="https://felixmon.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Deploy</title>
+      <link>https://felixmon.github.io/post/deploy/</link>
+      <pubDate>Mon, 24 Sep 2018 00:44:54 +0800</pubDate>
+      
+      <guid>https://felixmon.github.io/post/deploy/</guid>
+      <description>`#!/bin/bash
+echo -e &amp;ldquo;\033[0;32mDeploying updates to GitHub&amp;hellip;\033[0m&amp;rdquo;
+rm -rf public hugo cp -rf ./public/* ./felixmon.github.io cd felixmon.github.io git add &amp;ndash;all msg=&amp;ldquo;rebuilding the site date&amp;ldquo; if [ $# -eq 1 ] then msg=&amp;ldquo;$1&amp;rdquo; fi git commit -m &amp;ldquo;$msg&amp;rdquo; git push origin master cd ..`</description>
+    </item>
     
     <item>
       <title>Hello Hugo!</title>

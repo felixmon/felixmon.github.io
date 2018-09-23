@@ -4,10 +4,9 @@
   <head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<meta name="description" content="Saying &#39;Hello&#39; from Hugo">
 	
 		<title>
-				lets see if this work &middot; Felix Mon Homepage
+				Deploy &middot; Felix Mon Homepage
 		</title>
 	
 		
@@ -43,25 +42,40 @@
 		<span>Written by</span>
 			
 			<br>
-			<span>on&nbsp;</span><time datetime="2018-09-23 00:00:00 &#43;0000 UTC">September 23, 2018</time>
+			<span>on&nbsp;</span><time datetime="2018-09-24 00:44:54 &#43;0800 CST">September 24, 2018</time>
 		</div>
 
-		<h1 class="post-title">lets see if this work</h1>
+		<h1 class="post-title">Deploy</h1>
 		<div class="post-line"></div>
 
-		<p>dangdang</p>
+		<p>`#!/bin/bash</p>
+
+<p>echo -e &ldquo;\033[0;32mDeploying updates to GitHub&hellip;\033[0m&rdquo;</p>
+
+<p>rm -rf public
+hugo
+cp -rf ./public/* ./felixmon.github.io
+cd felixmon.github.io
+git add &ndash;all
+msg=&ldquo;rebuilding the site <code>date</code>&ldquo;
+if [ $# -eq 1 ]
+  then msg=&ldquo;$1&rdquo;
+fi
+git commit -m &ldquo;$msg&rdquo;
+git push origin master
+cd ..`</p>
 
 
 	</div>
 
 	<div class="pagination">
-		<a href="/post/hello-world/" class="right arrow">&#8594;</a>
+		<a href="/post/hello-world/" class="left arrow">&#8592;</a>
 
 		<a href="#" class="top">Top</a>
 	</div>
 </main>		<footer>
 			<span>
-			&copy; <time datetime="2018-09-24 00:51:07.783502887 &#43;0800 CST m=&#43;0.043375888">2018</time> . Made with Hugo using the <a href="https://github.com/EmielH/tale-hugo/">Tale</a> theme.
+			&copy; <time datetime="2018-09-24 00:51:07.783546748 &#43;0800 CST m=&#43;0.043419751">2018</time> . Made with Hugo using the <a href="https://github.com/EmielH/tale-hugo/">Tale</a> theme.
 			</span>
 		</footer>
   </body>

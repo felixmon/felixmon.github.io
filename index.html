@@ -44,13 +44,12 @@
 			<a href="https://felixmon.github.io/post/deploy/" class="catalogue-item">
 				<div>
 					<time datetime="2018-09-24 00:44:54 &#43;0800 CST" class="catalogue-time">September 24, 2018</time>
-					<h1 class="catalogue-title">Deploy</h1>
+					<h1 class="catalogue-title">Deploy.sh</h1>
 					<div class="catalogue-line"></div>
 	
 					<p>
-						`#!/bin/bash
-echo -e &ldquo;\033[0;32mDeploying updates to GitHub&hellip;\033[0m&rdquo;
-rm -rf public hugo cp -rf ./public/* ./felixmon.github.io cd felixmon.github.io git add &ndash;all msg=&ldquo;rebuilding the site date&ldquo; if [ $# -eq 1 ] then msg=&ldquo;$1&rdquo; fi git commit -m &ldquo;$msg&rdquo; git push origin master cd ..`
+						创造一个 shell script 以使得 hugo 实现自动化部署
+#!/bin/bash echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot; cd felixmon.github.io &amp;&amp; rm -rf * &amp;&amp; cd .. rm -rf public hugo -D cp -rf ./public/* ./felixmon.github.io cd felixmon.github.io git add --all msg=&quot;rebuilding the site `date`&quot; if [ $# -eq 1 ] then msg=&quot;$1&quot; fi git commit -m &quot;$msg&quot; git push --force origin master cd ..  
 					</p>
 	
 				</div>
@@ -64,20 +63,8 @@ rm -rf public hugo cp -rf ./public/* ./felixmon.github.io cd felixmon.github.io 
 	
 					<p>
 						Hugo 部署完整指南 Preface 网上有很多关于在 github pages 上部署 hugo 的文章，但是不完整，经查阅 hugo 官方文档，我尽量做到完整。
-目录 第一步 简要的命令 以下是完整到顺序命令，解释在后文 1. &gt;brew install hugo 1. &gt;hugo new site &lt;sitename&gt; 1. &gt;cd &lt;sitename&gt; 1. 在 github 上建立一个 &lt;username&gt;.github.io 的repository 1. &gt;git clone https://&lt;username&gt;.github.com/&lt;username&gt;.github.io 1. &gt;git submodule add https://github.com/EmielH/tale-hugo.git themes/tale 1. &gt;hugo new post/hello-world.md 1. &gt;hugo server -D 或者 hugo server 打开本地浏览器查阅博客效果 1. &gt;rm -rf public 1. &gt;hugo 1. &gt;cd public &amp;&amp; cp -r * ../&lt;usernname&gt;.github.io 1.
-					</p>
-	
-				</div>
-			</a>
-		
-			<a href="https://felixmon.github.io/post/if-this-works/" class="catalogue-item">
-				<div>
-					<time datetime="2018-09-23 00:00:00 &#43;0000 UTC" class="catalogue-time">September 23, 2018</time>
-					<h1 class="catalogue-title">lets see if this work</h1>
-					<div class="catalogue-line"></div>
-	
-					<p>
-						dangdang
+目录 第一步 简要的命令 以下是完整到顺序命令，解释在后文
+ brew install hugo hugo new site &lt;sitename&gt; cd &lt;sitename&gt; 在 github 上建立一个 &lt;username&gt;.github.io 的repository git clone https://&lt;username&gt;.github.com/&lt;username&gt;.github.io git submodule add https://github.com/EmielH/tale-hugo.git themes/tale hugo new post/hello-world.md hugo server -D 或者 hugo server 打开本地浏览器查阅博客效果 rm -rf public hugo cd public &amp;&amp; cp -r * ../&lt;usernname&gt;.github.io cd ../&lt;username&gt;.github.io git add --all git commit -m &quot;it has to be something here&quot; git push origin master  未完待续……
 					</p>
 	
 				</div>
@@ -95,7 +82,7 @@ rm -rf public hugo cp -rf ./public/* ./felixmon.github.io cd felixmon.github.io 
 
 		<footer>
 			<span>
-			&copy; <time datetime="2018-09-25 01:08:10.442742586 &#43;0800 CST m=&#43;0.044073627">2018</time> . Made with Hugo using the <a href="https://github.com/EmielH/tale-hugo/">Tale</a> theme.
+			&copy; <time datetime="2018-09-25 01:46:07.550781776 &#43;0800 CST m=&#43;0.053430451">2018</time> . Made with Hugo using the <a href="https://github.com/EmielH/tale-hugo/">Tale</a> theme.
 			</span>
 		</footer>
   </body>

@@ -18,16 +18,8 @@
       
       <guid>https://felixmon.github.io/post/hello-world/</guid>
       <description>Hugo 部署完整指南 Preface 网上有很多关于在 github pages 上部署 hugo 的文章，但是不完整，经查阅 hugo 官方文档，我尽量做到完整。
-目录 第一步 简要的命令 以下是完整到顺序命令，解释在后文 1. &amp;gt;brew install hugo 1. &amp;gt;hugo new site &amp;lt;sitename&amp;gt; 1. &amp;gt;cd &amp;lt;sitename&amp;gt; 1. 在 github 上建立一个 &amp;lt;username&amp;gt;.github.io 的repository 1. &amp;gt;git clone https://&amp;lt;username&amp;gt;.github.com/&amp;lt;username&amp;gt;.github.io 1. &amp;gt;git submodule add https://github.com/EmielH/tale-hugo.git themes/tale 1. &amp;gt;hugo new post/hello-world.md 1. &amp;gt;hugo server -D 或者 hugo server 打开本地浏览器查阅博客效果 1. &amp;gt;rm -rf public 1. &amp;gt;hugo 1. &amp;gt;cd public &amp;amp;&amp;amp; cp -r * ../&amp;lt;usernname&amp;gt;.github.io 1.</description>
-    </item>
-    
-    <item>
-      <title>lets see if this work</title>
-      <link>https://felixmon.github.io/post/if-this-works/</link>
-      <pubDate>Sun, 23 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://felixmon.github.io/post/if-this-works/</guid>
-      <description>dangdang</description>
+目录 第一步 简要的命令 以下是完整到顺序命令，解释在后文
+ brew install hugo hugo new site &amp;lt;sitename&amp;gt; cd &amp;lt;sitename&amp;gt; 在 github 上建立一个 &amp;lt;username&amp;gt;.github.io 的repository git clone https://&amp;lt;username&amp;gt;.github.com/&amp;lt;username&amp;gt;.github.io git submodule add https://github.com/EmielH/tale-hugo.git themes/tale hugo new post/hello-world.md hugo server -D 或者 hugo server 打开本地浏览器查阅博客效果 rm -rf public hugo cd public &amp;amp;&amp;amp; cp -r * ../&amp;lt;usernname&amp;gt;.github.io cd ../&amp;lt;username&amp;gt;.github.io git add --all git commit -m &amp;quot;it has to be something here&amp;quot; git push origin master  未完待续……</description>
     </item>
     
   </channel>

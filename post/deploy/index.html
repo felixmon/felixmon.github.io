@@ -8,14 +8,12 @@
   <title>Deploy.sh</title>
   <meta property="og:title" content="Deploy.sh" />
   <meta name="twitter:title" content="Deploy.sh" />
-  <meta name="description" content="创造一个 shell script 以使得 hugo 实现自动化部署
-#!/bin/bash echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot; cd felixmon.github.io &amp;&amp; rm -rf * &amp;&amp; cd .. rm -rf public hugo -D cp -rf ./public/* ./felixmon.github.io cd felixmon.github.io git add --all msg=&quot;rebuilding the site `date`&quot; if [ $# -eq 1 ] then msg=&quot;$1&quot; fi git commit -m &quot;$msg&quot; git push --force origin master cd ..  Hugo 官方scripts
-#!/bin/bash echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot; # Build the project.">
-  <meta property="og:description" content="创造一个 shell script 以使得 hugo 实现自动化部署
-#!/bin/bash echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot; cd felixmon.github.io &amp;&amp; rm -rf * &amp;&amp; cd .. rm -rf public hugo -D cp -rf ./public/* ./felixmon.github.io cd felixmon.github.io git add --all msg=&quot;rebuilding the site `date`&quot; if [ $# -eq 1 ] then msg=&quot;$1&quot; fi git commit -m &quot;$msg&quot; git push --force origin master cd ..  Hugo 官方scripts
-#!/bin/bash echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot; # Build the project.">
-  <meta name="twitter:description" content="创造一个 shell script 以使得 hugo 实现自动化部署
-#!/bin/bash echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot; cd felixmon.github.io &amp;&amp; rm -rf * &amp;&amp; cd .. rm -rf public hugo -D cp …">
+  <meta name="description" content="首先删除 hugo 默认产生的 public, 以后不用重复删除。rm -rf public 下载 master branch 到本地 git clone https://username.github.io/username.githug.io  创造一个 shell script 以使得 hugo 实现自动化部署，步骤最后一步可能会需要输入ssh key 密码。
+#!/bin/bash echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot; # Build the project. hugo # if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;` # Go To Public folder cd public # Add changes to git. git add . # Commit changes. msg=&quot;rebuilding site `date`&quot; if [ $# -eq 1 ] then msg=&quot;$1&quot; fi git commit -m &quot;$msg&quot; # Push source and build repos.">
+  <meta property="og:description" content="首先删除 hugo 默认产生的 public, 以后不用重复删除。rm -rf public 下载 master branch 到本地 git clone https://username.github.io/username.githug.io  创造一个 shell script 以使得 hugo 实现自动化部署，步骤最后一步可能会需要输入ssh key 密码。
+#!/bin/bash echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot; # Build the project. hugo # if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;` # Go To Public folder cd public # Add changes to git. git add . # Commit changes. msg=&quot;rebuilding site `date`&quot; if [ $# -eq 1 ] then msg=&quot;$1&quot; fi git commit -m &quot;$msg&quot; # Push source and build repos.">
+  <meta name="twitter:description" content="首先删除 hugo 默认产生的 public, 以后不用重复删除。rm -rf public 下载 master branch 到本地 git clone https://username.github.io/username.githug.io  创造一个 shell script 以使得 hugo 实现自动化部署，步骤最后一步可能会需要输入ssh key 密码。
+#!/bin/bash …">
   <meta name="author" content=""/>
   <meta name="twitter:card" content="summary" />
   <meta property="og:url" content="https://felixmon.github.io/post/deploy/" />
@@ -162,26 +160,12 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>创造一个 shell script 以使得 hugo 实现自动化部署</p>
+        <ul>
+<li>首先删除 hugo 默认产生的 public, 以后不用重复删除。<code>rm -rf public</code></li>
+<li>下载 master branch 到本地 <code>git clone https://username.github.io/username.githug.io</code></li>
+</ul>
 
-<pre><code class="language-shell">#!/bin/bash
-echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot;
-cd felixmon.github.io &amp;&amp; rm -rf * &amp;&amp; cd ..
-rm -rf public
-hugo -D
-cp -rf ./public/* ./felixmon.github.io
-cd felixmon.github.io
-git add --all
-msg=&quot;rebuilding the site `date`&quot;
-if [ $# -eq 1 ]
-  then msg=&quot;$1&quot;
-fi
-git commit -m &quot;$msg&quot;
-git push --force origin master
-cd ..
-</code></pre>
-
-<p>Hugo 官方scripts</p>
+<p>创造一个 shell script 以使得 hugo 实现自动化部署，步骤最后一步可能会需要输入ssh key 密码。</p>
 
 <pre><code class="language-shell">#!/bin/bash
 
@@ -208,6 +192,8 @@ git push origin master
 # Come Back up to the Project Root
 cd ..
 </code></pre>
+
+<p>保存上述 shell scripts 为 deploy.sh 后 chmod +x 使其可执行。</p>
 
 
         

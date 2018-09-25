@@ -53,24 +53,13 @@
     </item>
     
     <item>
-      <title>Deploy.sh</title>
+      <title>HUGO 安装指南</title>
       <link>https://felixmon.github.io/post/deploy/</link>
       <pubDate>Mon, 24 Sep 2018 00:44:54 +0800</pubDate>
       
       <guid>https://felixmon.github.io/post/deploy/</guid>
-      <description>首先删除 hugo 默认产生的 public, 以后不用重复删除。rm -rf public 下载 master branch 到本地 git clone https://username.github.io/username.githug.io 创建 submodule public git submodule add -f -b master git@github.com:username/username.github.io.git public  创造一个 shell script 以使得 hugo 实现自动化部署，步骤最后一步可能会需要输入ssh key 密码。
-#!/bin/bash echo -e &amp;quot;\033[0;32mDeploying updates to GitHub...\033[0m&amp;quot; # Build the project. hugo -D # Go To Public folder cd public # Add changes to git. git add . # Commit changes. msg=&amp;quot;rebuilding site `date`&amp;quot; if [ $# -eq 1 ] then msg=&amp;quot;$1&amp;quot; fi git commit -m &amp;quot;$msg&amp;quot; # Push source and build repos.</description>
-    </item>
-    
-    <item>
-      <title>Hello Hugo!</title>
-      <link>https://felixmon.github.io/post/hello-world/</link>
-      <pubDate>Sun, 23 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://felixmon.github.io/post/hello-world/</guid>
-      <description>Hugo 部署完整指南 Preface 网上有很多关于在 github pages 上部署 hugo 的文章，但是不完整，经查阅 hugo 官方文档，我尽量做到完整。
-目录 第一步 简要的命令 以下是完整到顺序命令，解释在后文
- brew install hugo hugo new site &amp;lt;sitename&amp;gt; cd &amp;lt;sitename&amp;gt; 在 github 上建立一个 &amp;lt;username&amp;gt;.github.io 的repository git clone https://&amp;lt;username&amp;gt;.github.com/&amp;lt;username&amp;gt;.github.io git submodule add https://github.com/EmielH/tale-hugo.git themes/tale hugo new post/hello-world.md hugo server -D 或者 hugo server 打开本地浏览器查阅博客效果 rm -rf public hugo cd public &amp;amp;&amp;amp; cp -r * ../&amp;lt;usernname&amp;gt;.github.io cd ../&amp;lt;username&amp;gt;.github.io git add --all git commit -m &amp;quot;it has to be something here&amp;quot; git push origin master  未完待续……</description>
+      <description>github 创建 username.github.io 的 repository mac terminal 下 brew install hugo hugo new site &amp;lt;sitename&amp;gt; 首先删除 hugo 默认产生的文件夹 public, 仅此一次，后无重复：rm -rf public 下载 master branch 到本地 git clone https://username.github.io/username.githug.io 创建 submodule public git submodule add -f -b master git@github.com:username/username.github.io.git public 下载主题（基本上每一个主题的 readme.md 都会告诉你如何安装： git clone https://github.com/EmielH/tale-hugo.git themes/tale 新建一个文章 hugo new post/hello-world.md 设置根目录下 config.toml 的 theme 值 theme = &amp;quot;tale&amp;quot;  创造一个 shell script 以使得 hugo 实现自动化部署，步骤最后一步可能会需要输入ssh key 密码。
+#!/bin/bash echo -e &amp;quot;\033[0;32mDeploying updates to GitHub.</description>
     </item>
     
   </channel>

@@ -13,48 +13,13 @@
   </url>
   
   <url>
-    <loc>https://felixmon.github.io/post/hello-world/</loc>
-    <lastmod>2018-09-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://felixmon.github.io/tags/blog/</loc>
-    <lastmod>2018-09-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://felixmon.github.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://felixmon.github.io/tags/example/</loc>
-    <lastmod>2018-09-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://felixmon.github.io/categories/example/</loc>
-    <lastmod>2018-09-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://felixmon.github.io/</loc>
     <lastmod>2018-09-25T15:39:43+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://felixmon.github.io/categories/hello/</loc>
-    <lastmod>2018-09-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://felixmon.github.io/tags/hugo/</loc>
-    <lastmod>2018-09-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -66,7 +31,6 @@
   
   <url>
     <loc>https://felixmon.github.io/tags/</loc>
-    <lastmod>2018-09-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

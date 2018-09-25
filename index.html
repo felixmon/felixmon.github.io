@@ -227,7 +227,16 @@
 
               <div class="post-entry">
                 
-                  github 创建 username.github.io 的 repository mac terminal 下 brew install hugo hugo new site &lt;sitename&gt; 首先删除 hugo 默认产生的文件夹 public, 仅此一次，后无重复：rm -rf public 下载 master branch 到本地 git clone https://username.github.io/username.githug.io 创建 submodule public git submodule add -f -b master git@github.com:username/username.github.io.git public 下载主题（基本上每一个主题的 readme.md 都会告诉你如何安装： git clone https://github.com/EmielH/tale-hugo.git themes/tale 新建一个文章 hugo new post/hello-world.md 设置根目录下 config.toml 的 theme 值 theme = &quot;tale&quot;  创造一个 shell script 以使得 hugo 实现自动化部署，步骤最后一步可能会需要输入ssh key 密码。
+                  Github Pages 登录 github 创建 username.github.io 的 repository
+下载 hugo 安装文件（MAC) $ brew install hugo
+创建一个新网站 hugo new site &lt;sitename&gt;
+下载一个新主题 git clone https://github.com/EmielH/tale-hugo.git themes/tale
+下载 repository git clone https://username.github.io/username.githug.io
+创立 submodule git submodule add -f -b master git@github.com:username/username.github.io.git public
+开始一篇新文章 hugo new post/hello-world.md
+告诉 hugo 应用哪个主题 设置根目录下 config.toml 的 theme 值 theme = &quot;tale&quot;
+尝试运行 hugo server -D
+自动运行 创造一个 shell script 以使得 hugo 实现自动化部署，步骤最后一步可能会需要输入ssh key 密码。
 #!/bin/bash echo -e &quot;\033[0;32mDeploying updates to GitHub.
                   <a href="https://felixmon.github.io/post/deploy/" class="post-read-more">[Read More]</a>
                 

@@ -18,7 +18,8 @@
       
       <guid>https://felixmon.github.io/post/deploy/</guid>
       <description>创造一个 shell script 以使得 hugo 实现自动化部署
-#!/bin/bash echo -e &amp;quot;\033[0;32mDeploying updates to GitHub...\033[0m&amp;quot; cd felixmon.github.io &amp;amp;&amp;amp; rm -rf * &amp;amp;&amp;amp; cd .. rm -rf public hugo -D cp -rf ./public/* ./felixmon.github.io cd felixmon.github.io git add --all msg=&amp;quot;rebuilding the site `date`&amp;quot; if [ $# -eq 1 ] then msg=&amp;quot;$1&amp;quot; fi git commit -m &amp;quot;$msg&amp;quot; git push --force origin master cd ..  </description>
+#!/bin/bash echo -e &amp;quot;\033[0;32mDeploying updates to GitHub...\033[0m&amp;quot; cd felixmon.github.io &amp;amp;&amp;amp; rm -rf * &amp;amp;&amp;amp; cd .. rm -rf public hugo -D cp -rf ./public/* ./felixmon.github.io cd felixmon.github.io git add --all msg=&amp;quot;rebuilding the site `date`&amp;quot; if [ $# -eq 1 ] then msg=&amp;quot;$1&amp;quot; fi git commit -m &amp;quot;$msg&amp;quot; git push --force origin master cd ..  Hugo 官方scripts
+#!/bin/bash echo -e &amp;quot;\033[0;32mDeploying updates to GitHub...\033[0m&amp;quot; # Build the project.</description>
     </item>
     
     <item>

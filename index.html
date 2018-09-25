@@ -49,7 +49,8 @@
 	
 					<p>
 						创造一个 shell script 以使得 hugo 实现自动化部署
-#!/bin/bash echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot; cd felixmon.github.io &amp;&amp; rm -rf * &amp;&amp; cd .. rm -rf public hugo -D cp -rf ./public/* ./felixmon.github.io cd felixmon.github.io git add --all msg=&quot;rebuilding the site `date`&quot; if [ $# -eq 1 ] then msg=&quot;$1&quot; fi git commit -m &quot;$msg&quot; git push --force origin master cd ..  
+#!/bin/bash echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot; cd felixmon.github.io &amp;&amp; rm -rf * &amp;&amp; cd .. rm -rf public hugo -D cp -rf ./public/* ./felixmon.github.io cd felixmon.github.io git add --all msg=&quot;rebuilding the site `date`&quot; if [ $# -eq 1 ] then msg=&quot;$1&quot; fi git commit -m &quot;$msg&quot; git push --force origin master cd ..  Hugo 官方scripts
+#!/bin/bash echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot; # Build the project.
 					</p>
 	
 				</div>
@@ -82,7 +83,7 @@
 
 		<footer>
 			<span>
-			&copy; <time datetime="2018-09-25 01:46:07.550781776 &#43;0800 CST m=&#43;0.053430451">2018</time> . Made with Hugo using the <a href="https://github.com/EmielH/tale-hugo/">Tale</a> theme.
+			&copy; <time datetime="2018-09-25 09:36:20.271883285 &#43;0800 CST m=&#43;0.097518915">2018</time> . Made with Hugo using the <a href="https://github.com/EmielH/tale-hugo/">Tale</a> theme.
 			</span>
 		</footer>
   </body>

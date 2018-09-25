@@ -59,7 +59,7 @@
       
       <guid>https://felixmon.github.io/post/deploy/</guid>
       <description>首先删除 hugo 默认产生的 public, 以后不用重复删除。rm -rf public 下载 master branch 到本地 git clone https://username.github.io/username.githug.io 创建 submodule public git submodule add -f -b master git@github.com:username/username.github.io.git public  创造一个 shell script 以使得 hugo 实现自动化部署，步骤最后一步可能会需要输入ssh key 密码。
-#!/bin/bash echo -e &amp;quot;\033[0;32mDeploying updates to GitHub...\033[0m&amp;quot; # Build the project. hugo # if using a theme, replace with `hugo -t &amp;lt;YOURTHEME&amp;gt;` # Go To Public folder cd public # Add changes to git. git add .</description>
+#!/bin/bash echo -e &amp;quot;\033[0;32mDeploying updates to GitHub...\033[0m&amp;quot; # Build the project. hugo -D # Go To Public folder cd public # Add changes to git. git add . # Commit changes. msg=&amp;quot;rebuilding site `date`&amp;quot; if [ $# -eq 1 ] then msg=&amp;quot;$1&amp;quot; fi git commit -m &amp;quot;$msg&amp;quot; # Push source and build repos.</description>
     </item>
     
     <item>

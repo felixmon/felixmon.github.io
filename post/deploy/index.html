@@ -7,11 +7,17 @@
         
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet">
 
         <title>HUGO 安装指南</title>
 
         <link rel="stylesheet" href="/css/stylesheet.css">
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
     </head>
     <body>
       <div class="container-fluid">
@@ -125,9 +131,31 @@ git push origin master
 <li><p>每次执行 deploy.sh 都需要输入 ssh key 密码</p></li>
 </ol>
 
-<h2 id="名词解释">名词解释</h2>
+<hr />
 
-<h3 id="submodule">submodule</h3>
+<h2 id="识别数学公式">识别数学公式</h2>
+
+<p>Hugo 采用 <a href="https://docs.mathjax.org/en/latest/start.html">MathJax</a> 来展现数学公式，最便捷的使用方式是在</p>
+
+<p><code>themes/themesname/layouts/partials/header.html</code></p>
+
+<p>中加入</p>
+
+<pre><code class="language-javascript">&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&gt;
+&lt;/script&gt;
+</code></pre>
+
+<p>这是一个部署在 CloudFlare 上的基于 CDN 的 javascript, 当然也可以部署 MathJax 在本地，另外，为了更准确的识别行文中的数学公式，建议再加入</p>
+
+<pre><code class="language-javascript">&lt;script type=&quot;text/x-mathjax-config&quot;&gt;
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+&lt;/script&gt;
+</code></pre>
+
+<p>测试结果如下：</p>
+
+<p>When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>
 
 <p>未完待续……</p>
 

@@ -59,16 +59,8 @@
       
       <guid>https://felixmon.github.io/post/deploy/</guid>
       <description>Github Pages 登录 github 创建 username.github.io 的 repository
-下载 hugo 安装文件（MAC) $ brew install hugo
-创建一个新网站 hugo new site &amp;lt;sitename&amp;gt;
-下载一个新主题 git clone https://github.com/EmielH/tale-hugo.git themes/tale
-下载 repository git clone https://username.github.io/username.githug.io
-创立 submodule git submodule add -f -b master git@github.com:username/username.github.io.git public
-开始一篇新文章 hugo new post/hello-world.md
-告诉 hugo 应用哪个主题 设置根目录下 config.toml 的 theme 值 theme = &amp;quot;tale&amp;quot;
-尝试运行 hugo server -D
-自动运行 创造一个 shell script 以使得 hugo 实现自动化部署，步骤最后一步可能会需要输入ssh key 密码。
-#!/bin/bash echo -e &amp;quot;\033[0;32mDeploying updates to GitHub.</description>
+下载 hugo 安装文件（MAC) brew install hugo  创建一个新网站 hugo new site &amp;lt;sitename&amp;gt;  下载一个新主题 git clone https://github.com/EmielH/tale-hugo.git themes/tale  下载 repository git clone https://username.github.io/username.githug.io  创立 submodule git submodule add -f -b master git@github.com:username/username.github.io.git public  开始一篇新文章 hugo new post/hello-world.md  告诉 hugo 应用哪个主题 设置根目录下 config.toml 的 theme 值
+theme = &amp;quot;tale&amp;quot;  尝试运行 hugo server -D  自动运行 创造一个 shell script 以使得 hugo 实现自动化部署，步骤最后一步可能会需要输入ssh key 密码。</description>
     </item>
     
   </channel>

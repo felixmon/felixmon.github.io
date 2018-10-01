@@ -18,6 +18,7 @@
         <script type="text/x-mathjax-config">
           MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
         </script>
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.js"></script>
     </head>
     <body>
       <div class="container-fluid">
@@ -62,35 +63,45 @@
 
 <h2 id="下载-hugo-安装文件-mac">下载 hugo 安装文件（MAC)</h2>
 
-<p><code>$ brew install hugo</code></p>
+<pre><code>brew install hugo
+</code></pre>
 
 <h2 id="创建一个新网站">创建一个新网站</h2>
 
-<p><code>hugo new site &lt;sitename&gt;</code></p>
+<pre><code>hugo new site &lt;sitename&gt;
+</code></pre>
 
 <h2 id="下载一个新主题">下载一个新主题</h2>
 
-<p><code>git clone https://github.com/EmielH/tale-hugo.git themes/tale</code></p>
+<pre><code>git clone https://github.com/EmielH/tale-hugo.git themes/tale
+</code></pre>
 
 <h2 id="下载-repository">下载 repository</h2>
 
-<p><code>git clone https://username.github.io/username.githug.io</code></p>
+<pre><code>git clone https://username.github.io/username.githug.io
+</code></pre>
 
 <h2 id="创立-submodule">创立 submodule</h2>
 
-<p><code>git submodule add -f -b master git@github.com:username/username.github.io.git public</code></p>
+<pre><code>git submodule add -f -b master git@github.com:username/username.github.io.git public
+</code></pre>
 
 <h2 id="开始一篇新文章">开始一篇新文章</h2>
 
-<p><code>hugo new post/hello-world.md</code></p>
+<pre><code>hugo new post/hello-world.md
+</code></pre>
 
 <h2 id="告诉-hugo-应用哪个主题">告诉 hugo 应用哪个主题</h2>
 
-<p>设置根目录下 config.toml 的 theme 值 <code>theme = &quot;tale&quot;</code></p>
+<p>设置根目录下 config.toml 的 theme 值</p>
+
+<pre><code>theme = &quot;tale&quot;
+</code></pre>
 
 <h2 id="尝试运行">尝试运行</h2>
 
-<p><code>hugo server -D</code></p>
+<pre><code>hugo server -D
+</code></pre>
 
 <h2 id="自动运行">自动运行</h2>
 
@@ -156,6 +167,55 @@ git push origin master
 
 <p>When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$</p>
+
+<hr />
+
+<h2 id="安装-mermaid">安装 mermaid</h2>
+
+<p><a href="https://mermaidjs.github.io/">mermaid</a> 用于画流程图以及甘特图, 主题 <a href="https://github.com/vjeantet/hugo-theme-docdock">docdock</a> 可以自动安装 mermaid, 接下来是在其它主题部署 mermaid 的步骤：</p>
+
+<ul>
+<li>安装 docdock 主题</li>
+</ul>
+
+<pre><code>git submodule add https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock
+</code></pre>
+
+<ul>
+<li>复制 shortcode</li>
+</ul>
+
+<pre><code>cp themes/docdock/layouts/shortcodes/mermaid.html themes/yourtheme/layouts/shortcodes/
+</code></pre>
+
+<ul>
+<li>复制 mermaid js 以及 css</li>
+</ul>
+
+<pre><code>cp -r themes/docdock/static/mermaid themes/yourtheme/static/
+</code></pre>
+
+<p>测试结果如下：</p>
+
+<link href="/mermaid/mermaid.css" type="text/css" rel="stylesheet"/>
+<script defer src="/mermaid/mermaid.js">mermaid.initialize({startOnLoad:true});</script>
+<div class="mermaid" align="left" >
+graph LR;
+    A[Hard edge] -->|Link text| B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+</div>
+
+<link href="/mermaid/mermaid.css" type="text/css" rel="stylesheet"/>
+<script defer src="/mermaid/mermaid.js">mermaid.initialize({startOnLoad:true});</script>
+<div class="mermaid" align="left" >
+graph TD
+  A-->B;
+  A-->C;
+  B-->D;
+  C-->D;
+</div>
 
 <p>未完待续……</p>
 

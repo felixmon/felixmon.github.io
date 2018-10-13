@@ -13,6 +13,10 @@
   </url>
   
   <url>
+    <loc>https://felixmon.github.io/post/output/</loc>
+  </url>
+  
+  <url>
     <loc>https://felixmon.github.io/categories/</loc>
     <priority>0</priority>
   </url>

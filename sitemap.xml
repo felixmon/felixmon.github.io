@@ -3,17 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://felixmon.github.io/post/tengchong/</loc>
-    <lastmod>2018-09-25T15:39:43+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://felixmon.github.io/post/deploy/</loc>
     <lastmod>2018-09-24T00:44:54+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://felixmon.github.io/post/output/</loc>
   </url>
   
   <url>
@@ -23,13 +14,13 @@
   
   <url>
     <loc>https://felixmon.github.io/</loc>
-    <lastmod>2018-09-25T15:39:43+08:00</lastmod>
+    <lastmod>2018-09-24T00:44:54+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://felixmon.github.io/post/</loc>
-    <lastmod>2018-09-25T15:39:43+08:00</lastmod>
+    <lastmod>2018-09-24T00:44:54+08:00</lastmod>
     <priority>0</priority>
   </url>
   

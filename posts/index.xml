@@ -8,7 +8,7 @@
 		<language>en</language>
 		<managingEditor>some@email.com (Some Author)</managingEditor>
 		<webMaster>some@email.com (Some Author)</webMaster>
-		<copyright>Some Author — All rights reserved.</copyright>
+		<copyright>Felix Mon — All rights reserved.</copyright>
 		<lastBuildDate>Wed, 23 Jan 2019 17:14:04 +0800</lastBuildDate>
 		<atom:link href="https://felixmon.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
 		<item>
@@ -88,11 +88,11 @@
 &lt;h2 id=&#34;下载一个新主题&#34;&gt;下载一个新主题&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;git clone https://github.com/EmielH/tale-hugo.git themes/tale&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id=&#34;下载-repository&#34;&gt;下载 repository&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;git clone https://username.github.io/username.githug.io&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;git clone https://github.com/username/username.github.io&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id=&#34;创立-submodule&#34;&gt;创立 submodule&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;git submodule add -f -b master git@github.com:username/username.github.io.git public&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id=&#34;开始一篇新文章&#34;&gt;开始一篇新文章&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;hugo new post/hello-world.md&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;hugo new posts/hello-world.md&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id=&#34;告诉-hugo-应用哪个主题&#34;&gt;告诉 hugo 应用哪个主题&lt;/h2&gt;
 
 &lt;p&gt;设置根目录下 config.toml 的 theme 值&lt;/p&gt;

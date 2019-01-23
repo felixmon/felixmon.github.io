@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="description" content="Github Pages 登录 github 创建 username.github.io 的 repository
-下载 hugo 安装文件（MAC) brew install hugo 创建一个新网站 hugo new site &lt;sitename&gt; 下载一个新主题 git clone https://github.com/EmielH/tale-hugo.git themes/tale 下载 repository git clone https://username.github.io/username.githug.io 创立 submodule git submodule add -f -b master git@github.com:username/username.github.io.git public 开始一篇新文章 hugo new post/hello-world.md 告诉 hugo 应用哪个主题 设置根目录下 config.toml 的 theme 值
+下载 hugo 安装文件（MAC) brew install hugo 创建一个新网站 hugo new site &lt;sitename&gt; 下载一个新主题 git clone https://github.com/EmielH/tale-hugo.git themes/tale 下载 repository git clone https://github.com/username/username.github.io 创立 submodule git submodule add -f -b master git@github.com:username/username.github.io.git public 开始一篇新文章 hugo new posts/hello-world.md 告诉 hugo 应用哪个主题 设置根目录下 config.toml 的 theme 值
 theme = &#34;tale&#34; 此处正确做法应该是将 theme 目录下的 config.toml 复制粘贴到站点根目录并覆盖原来的文件，否则一些特效会出不来。
 尝试运行 hugo server -D 自动运行 创造一个 shell script 以使得 hugo 实现自动化部署，步骤最后一步可能会需要输入ssh key 密码。" />
   <meta name="author" content="Some Author" />
@@ -77,11 +77,11 @@ theme = &#34;tale&#34; 此处正确做法应该是将 theme 目录下的 config.
 <h2 id="下载一个新主题">下载一个新主题</h2>
 <div class="highlight"><pre class="chroma">git clone https://github.com/EmielH/tale-hugo.git themes/tale</pre></div>
 <h2 id="下载-repository">下载 repository</h2>
-<div class="highlight"><pre class="chroma">git clone https://username.github.io/username.githug.io</pre></div>
+<div class="highlight"><pre class="chroma">git clone https://github.com/username/username.github.io</pre></div>
 <h2 id="创立-submodule">创立 submodule</h2>
 <div class="highlight"><pre class="chroma">git submodule add -f -b master git@github.com:username/username.github.io.git public</pre></div>
 <h2 id="开始一篇新文章">开始一篇新文章</h2>
-<div class="highlight"><pre class="chroma">hugo new post/hello-world.md</pre></div>
+<div class="highlight"><pre class="chroma">hugo new posts/hello-world.md</pre></div>
 <h2 id="告诉-hugo-应用哪个主题">告诉 hugo 应用哪个主题</h2>
 
 <p>设置根目录下 config.toml 的 theme 值</p>
@@ -231,7 +231,7 @@ graph TD
   <div class="pure-menu pure-menu-horizontal">
     <ul class="pure-menu-list">
       <li class="pure-menu-item">
-        <a class="pure-menu-link" href="https://github.com/someauthor">GitHub</a>
+        <a class="pure-menu-link" href="https://github.com/felixmon">GitHub</a>
       </li>
       <li class="pure-menu-item">
         <a class="pure-menu-link" href="https://twitter.com/someauthor">Twitter</a>
@@ -252,7 +252,7 @@ graph TD
   <div class="pure-menu pure-menu-horizontal">
     <ul class="pure-menu-list">
       <li class="pure-menu-item pure-menu-disabled">
-        &copy; 2019 &mdash; Some Author — All rights reserved.
+        &copy; 2019 &mdash; Felix Mon — All rights reserved.
       </li>
     </ul>
   </div>

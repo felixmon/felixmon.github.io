@@ -3,39 +3,44 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://felixmon.github.io/test11/</loc>
-    <lastmod>2019-01-13T15:33:56+08:00</lastmod>
+    <loc>https://example.com/posts/the-slick-theme/</loc>
+    <lastmod>2019-01-23T17:14:04+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://felixmon.github.io/about/</loc>
+    <loc>https://example.com/about/</loc>
     <lastmod>2019-01-13T15:26:29+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://felixmon.github.io/post/deploy/</loc>
+    <loc>https://example.com/posts/deploy/</loc>
     <lastmod>2018-09-24T00:44:54+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://felixmon.github.io/</loc>
-    <lastmod>2019-01-13T15:33:56+08:00</lastmod>
+    <loc>https://example.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://felixmon.github.io/categories/</loc>
+    <loc>https://example.com/posts/</loc>
+    <lastmod>2019-01-23T17:14:04+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://felixmon.github.io/post/</loc>
-    <lastmod>2018-09-24T00:44:54+08:00</lastmod>
+    <loc>https://example.com/series/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://felixmon.github.io/tags/</loc>
+    <loc>https://example.com/</loc>
+    <lastmod>2019-01-23T17:14:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/</loc>
     <priority>0</priority>
   </url>
   

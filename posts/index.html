@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Posts | Slick</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Example site for Slick Hugo theme" />
+  <meta name="author" content="Some Author" />
+  <meta name="generator" content="Hugo 0.45" />
+  <link href="https://example.com/index.xml" rel="alternate" type="application/rss+xml" title="Slick Feed" />
+  <link rel="shortcut icon" href="https://example.com/img/favicon.png" type="image/png" />
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://example.com/assets/style-compat.css" />
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://example.com/assets/style.css" />
+  <!--<![endif]-->
+</head>
+<body>
+<div class="pure-g">
+  <div class="pure-u-1-24 pure-u-md-5-24"></div>
+  <div class="pure-u-22-24 pure-u-md-14-24">
+  <div class="navigation-header">
+  <div class="pure-menu pure-menu-horizontal">
+    <a class="pure-menu-heading pure-menu-link" href="https://example.com/">
+      Slick
+    </a>
+    <ul class="pure-menu-list pull-end navigation-header-subtitle">
+      <li class="pure-menu-item pure-menu-disabled">Just another site</li>
+    </ul>
+  </div>
+</div>
+<div class="navigation-content">
+  <div class="pure-menu pure-menu-horizontal">
+    <ul class="pure-menu-list">
+      <li class="pure-menu-item pure-menu-selected">
+        <a  class="pure-menu-link" href="https://example.com/posts/">Posts</a>
+      </li>
+      <li class="pure-menu-item">
+        <a  class="pure-menu-link" href="https://example.com/categories/">Categories</a>
+      </li>
+      <li class="pure-menu-item">
+        <a  class="pure-menu-link" href="https://example.com/series/">Series</a>
+      </li>
+      <li class="pure-menu-item">
+        <a  class="pure-menu-link" href="https://example.com/tags/">Tags</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  
+<div>
+  <p>Posts:</p>
+  <ul>
+    <li>
+      <div class="post-title">
+        <a href="https://example.com/posts/the-slick-theme/">The Slick Theme</a>
+      </div>
+      <div class="post-meta">
+  Date &#x5b;
+    <time datetime="2019-01-23T17:14:04&#43;08:00">Wed, 23 Jan 2019 17:14:04 CST</time>
+  &#x5d;
+</div>
+
+    </li>
+    <li>
+      <div class="post-title">
+        <a href="https://example.com/posts/deploy/">HUGO 安装指南</a>
+      </div>
+      <div class="post-meta">
+  Date &#x5b;
+    <time datetime="2018-09-24T00:44:54&#43;08:00">Mon, 24 Sep 2018 00:44:54 CST</time>
+  &#x5d;
+</div>
+
+    </li>
+  </ul>
+</div>
+
+
+<div class="pagination-content">
+  <div class="pure-menu pure-menu-horizontal">
+    <ul class="pure-menu-list">
+      <span class="pure-menu-item pure-menu-disabled">
+        Pages
+      </span>
+      <li class="pure-menu-item pure-menu-selected">
+        <a href="https://example.com/posts/" class="pure-menu-link">First</a>
+      </li>
+      <li class="pure-menu-item pure-menu-selected">
+        <a href="https://example.com/posts/" class="pure-menu-link">Last</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  <div class="footer-content">
+  <div class="pure-menu pure-menu-horizontal">
+    <ul class="pure-menu-list">
+      <li class="pure-menu-item">
+        <a class="pure-menu-link" href="https://github.com/someauthor">GitHub</a>
+      </li>
+      <li class="pure-menu-item">
+        <a class="pure-menu-link" href="https://twitter.com/someauthor">Twitter</a>
+      </li>
+      <li class="pure-menu-item">
+        <a class="pure-menu-link" href="https://medium.com/@someauthor">Medium</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="https://example.com/index.xml" class="pure-menu-link">RSS</a>
+      </li>
+      <li class="pure-menu-item">
+        <a class="pure-menu-link" id="btn-gototop">
+          <span class="fixup">&#x21e7;&#xfe0e;</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="pure-menu pure-menu-horizontal">
+    <ul class="pure-menu-list">
+      <li class="pure-menu-item pure-menu-disabled">
+        &copy; 2019 &mdash; Some Author — All rights reserved.
+      </li>
+    </ul>
+  </div>
+</div>
+<script>
+  function setElementsClass(selector, value) {
+    Array.prototype.forEach.call(
+      document.querySelectorAll(selector),
+      function(elem) { elem.className = value; }
+    );
+  }
+
+  setElementsClass('img', 'pure-img');
+  setElementsClass('table', 'pure-table');
+
+  function onResize() {
+      setElementsClass(
+        '.pure-menu', document.documentElement.clientWidth >= 568 ?
+              'pure-menu pure-menu-horizontal' : 'pure-menu'
+      );
+  }
+  onResize();
+  window.addEventListener('resize', onResize);
+
+  document.getElementById('btn-gototop').addEventListener('click', function() {
+    function scroll() {
+      if (window.pageYOffset > 0) { setTimeout(scroll, 8); }
+      window.scroll(0, window.pageYOffset - 128);
+    }
+    scroll();
+  });
+</script>
+
+  </div>
+  <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+</body>
+</html>

@@ -1,86 +1,404 @@
 <!DOCTYPE html>
-<html>
-    <head>
-	<meta name="generator" content="Hugo 0.45" />
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Slick</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Example site for Slick Hugo theme" />
+  <meta name="author" content="Some Author" />
+  <meta name="generator" content="Hugo 0.45" />
+  <link href="https://example.com/index.xml" rel="alternate" type="application/rss+xml" title="Slick Feed" />
+  <link rel="shortcut icon" href="https://example.com/img/favicon.png" type="image/png" />
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://example.com/assets/style-compat.css" />
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://example.com/assets/style.css" />
+  <!--<![endif]-->
+</head>
+<body>
+<div class="pure-g">
+  <div class="pure-u-1-24 pure-u-md-5-24"></div>
+  <div class="pure-u-22-24 pure-u-md-14-24">
+  <div class="navigation-header">
+  <div class="pure-menu pure-menu-horizontal">
+    <a class="pure-menu-heading pure-menu-link" href="https://example.com/">
+      Slick
+    </a>
+    <ul class="pure-menu-list pull-end navigation-header-subtitle">
+      <li class="pure-menu-item pure-menu-disabled">Just another site</li>
+    </ul>
+  </div>
+</div>
+<div class="navigation-content">
+  <div class="pure-menu pure-menu-horizontal">
+    <ul class="pure-menu-list">
+      <li class="pure-menu-item">
+        <a  class="pure-menu-link" href="https://example.com/posts/">Posts</a>
+      </li>
+      <li class="pure-menu-item">
+        <a  class="pure-menu-link" href="https://example.com/categories/">Categories</a>
+      </li>
+      <li class="pure-menu-item">
+        <a  class="pure-menu-link" href="https://example.com/series/">Series</a>
+      </li>
+      <li class="pure-menu-item">
+        <a  class="pure-menu-link" href="https://example.com/tags/">Tags</a>
+      </li>
+    </ul>
+  </div>
+</div>
 
-        
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet">
-
-        <title> </title>
-
-        <link rel="stylesheet" href="/css/stylesheet.css">
-
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
 
-        <script type="text/x-mathjax-config">
-          MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-        </script>
+<p >
+  <div>
+    <h2 class="post-title">
+      
+      <a href="https://example.com/posts/the-slick-theme/">The Slick Theme</a>
+    </h2>
+    <div class="post-meta">
+  Date &#x5b;
+    <time datetime="2019-01-23T17:14:04&#43;08:00">Wed, 23 Jan 2019 17:14:04 CST</time>
+  &#x5d;
+</div>
 
-    </head>
-    <body>
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-md navbar-light">
+  </div>
+  <div>
+    <p>howdy</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
+</span><span class="cp"></span><span class="nb">echo</span> Hello world</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">run_server</span><span class="p">(</span><span class="n">config</span><span class="p">:</span> <span class="n">lsConfig</span><span class="o">.</span><span class="n">Config</span><span class="p">):</span>
+    <span class="n">loop</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">get_event_loop</span><span class="p">()</span>
 
-          
-          <span class="navbar-brand mb-0 h1"></span>
+    <span class="n">listenAddr</span> <span class="o">=</span> <span class="n">net</span><span class="o">.</span><span class="n">Address</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">localAddr</span><span class="p">,</span> <span class="n">config</span><span class="o">.</span><span class="n">localPort</span><span class="p">)</span>
+    <span class="n">remoteAddr</span> <span class="o">=</span> <span class="n">net</span><span class="o">.</span><span class="n">Address</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">serverAddr</span><span class="p">,</span> <span class="n">config</span><span class="o">.</span><span class="n">serverPort</span><span class="p">)</span>
+    <span class="n">server</span> <span class="o">=</span> <span class="n">LsLocal</span><span class="p">(</span>
+        <span class="n">loop</span><span class="o">=</span><span class="n">loop</span><span class="p">,</span>
+        <span class="n">password</span><span class="o">=</span><span class="n">config</span><span class="o">.</span><span class="n">password</span><span class="p">,</span>
+        <span class="n">listenAddr</span><span class="o">=</span><span class="n">listenAddr</span><span class="p">,</span>
+        <span class="n">remoteAddr</span><span class="o">=</span><span class="n">remoteAddr</span><span class="p">)</span>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation" name="button">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <span class="k">def</span> <span class="nf">didListen</span><span class="p">(</span><span class="n">address</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Listen to </span><span class="si">%s</span><span class="s1">:</span><span class="si">%d</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">address</span><span class="p">)</span>
 
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-item nav-link active" href="/">Home</a>
-              
-              
-              <a class="nav-item nav-link " href="/about/">About</a>
-            </div>
-          </div>
-        </nav>
+    <span class="n">asyncio</span><span class="o">.</span><span class="n">ensure_future</span><span class="p">(</span><span class="n">server</span><span class="o">.</span><span class="n">listen</span><span class="p">(</span><span class="n">didListen</span><span class="p">))</span>
+    <span class="n">loop</span><span class="o">.</span><span class="n">run_forever</span><span class="p">()</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Example HTML5 Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Test<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre></div>
+<p>You can also use inline Markdown.</p>
 
-        <section id="page-title">
-          <h1><a href="/"> </a></h1>
-          <span id="author-name">
-            <h6><a href="/about/"></a></h6>
-          </span>
-        </section>
+<table>
+<thead>
+<tr>
+<th>Inline</th>
+<th>Markdown</th>
+<th>In</th>
+<th>Table</th>
+</tr>
+</thead>
 
+<tbody>
+<tr>
+<td><em>italics</em></td>
+<td><strong>bold</strong></td>
+<td><del>strikethrough</del></td>
+<td><code>code</code></td>
+</tr>
+</tbody>
+</table>
 
-<section>
-  <ul class="posts_listing">
+<p>space</p>
+
+  </div>
+</p>
+<p class="post-divider">
+  <div>
+    <h2 class="post-title">
+      DRAFT: 
+      <a href="https://example.com/about/">About</a>
+    </h2>
+    <div class="post-meta">
+  Date &#x5b;
+    <time datetime="2019-01-13T15:26:29&#43;08:00">Sun, 13 Jan 2019 15:26:29 CST</time>
+  &#x5d;
+</div>
+
+  </div>
+  <div>
+    <p>hello world!</p>
+
+  </div>
+</p>
+<p class="post-divider">
+  <div>
+    <h2 class="post-title">
+      
+      <a href="https://example.com/posts/deploy/">HUGO 安装指南</a>
+    </h2>
+    <div class="post-meta">
+  Date &#x5b;
+    <time datetime="2018-09-24T00:44:54&#43;08:00">Mon, 24 Sep 2018 00:44:54 CST</time>
+  &#x5d;
+</div>
+
+  </div>
+  <div>
     
-    <li>
-      <div class="row" id="posts">
-        <div class="d-none d-sm-block col-sm-3 date-time-title">
-          <time>24 Sep 2018</time>
-        </div>
-        <div class="col-sm date-time-title post">
-          <a href="/post/deploy/">HUGO 安装指南</a>
-        </div>
-      </div>
-    </li>
-    
-  </ul>
-</section>
 
-      <footer>
-        <hr>
-        <small>
-          &copy; 2019 .
-          Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> using the <a href="https://github.com/arjunkrishnababu96/basics" target="_blank">Basics</a> theme.
-        </small>
-      </footer>
-    </div> 
+<h2 id="github-pages">Github Pages</h2>
 
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  </body>
+<p>登录 github 创建 username.github.io 的 repository</p>
+
+<h2 id="下载-hugo-安装文件-mac">下载 hugo 安装文件（MAC)</h2>
+<div class="highlight"><pre class="chroma">brew install hugo</pre></div>
+<h2 id="创建一个新网站">创建一个新网站</h2>
+<div class="highlight"><pre class="chroma">hugo new site &lt;sitename&gt;</pre></div>
+<h2 id="下载一个新主题">下载一个新主题</h2>
+<div class="highlight"><pre class="chroma">git clone https://github.com/EmielH/tale-hugo.git themes/tale</pre></div>
+<h2 id="下载-repository">下载 repository</h2>
+<div class="highlight"><pre class="chroma">git clone https://username.github.io/username.githug.io</pre></div>
+<h2 id="创立-submodule">创立 submodule</h2>
+<div class="highlight"><pre class="chroma">git submodule add -f -b master git@github.com:username/username.github.io.git public</pre></div>
+<h2 id="开始一篇新文章">开始一篇新文章</h2>
+<div class="highlight"><pre class="chroma">hugo new post/hello-world.md</pre></div>
+<h2 id="告诉-hugo-应用哪个主题">告诉 hugo 应用哪个主题</h2>
+
+<p>设置根目录下 config.toml 的 theme 值</p>
+<div class="highlight"><pre class="chroma">theme = &#34;tale&#34;</pre></div>
+<p><mark>此处正确做法应该是将 theme 目录下的 config.toml 复制粘贴到站点根目录并覆盖原来的文件，否则一些特效会出不来。</mark></p>
+
+<h2 id="尝试运行">尝试运行</h2>
+<div class="highlight"><pre class="chroma">hugo server -D</pre></div>
+<h2 id="自动运行">自动运行</h2>
+
+<p>创造一个 shell script 以使得 hugo 实现自动化部署，步骤最后一步可能会需要输入ssh key 密码。</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="cp">#!/bin/bash
+</span><span class="cp"></span>
+<span class="nb">echo</span> -e <span class="s2">&#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;</span>
+
+<span class="c1"># Build the project.
+</span><span class="c1"></span>hugo -D
+
+<span class="c1"># Go To Public folder
+</span><span class="c1"></span><span class="nb">cd</span> public
+<span class="c1"># Add changes to git.
+</span><span class="c1"></span>git add .
+
+<span class="c1"># Commit changes.
+</span><span class="c1"></span><span class="nv">msg</span><span class="o">=</span><span class="s2">&#34;rebuilding site `date`&#34;</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$#</span> -eq <span class="m">1</span> <span class="o">]</span>
+  <span class="k">then</span> <span class="nv">msg</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span>
+<span class="k">fi</span>
+git commit -m <span class="s2">&#34;</span><span class="nv">$msg</span><span class="s2">&#34;</span>
+
+<span class="c1"># Push source and build repos.
+</span><span class="c1"></span>git push origin master</code></pre></div>
+<p>保存上述 shell scripts 为 deploy.sh 后 chmod +x 使其可执行，以后每次改动或者新增文章，只要 ./deploy.sh 就可以了。</p>
+
+<p>仍需解决的问题：</p>
+
+<ol>
+<li><p>hugo 并不提供删除文章的命令，因为直接在文件夹 content 删除即可，但这样会使得 public 文件夹里的文章不会随着 content 文章的删除而删除，如此一来， git push 的时候，所删除的文章也不会反映到 github 上；</p></li>
+
+<li><p>如果文章中的 markdown 语法或者其它 hugo 语法错误，那么 hugo -D 的执行结果就会出现错误，，进而导致后续的一系列问题；</p></li>
+
+<li><p>每次执行 deploy.sh 都需要输入 ssh key 密码</p></li>
+</ol>
+
+<hr />
+
+<h2 id="识别数学公式">识别数学公式</h2>
+
+<p>Hugo 采用 <a href="https://docs.mathjax.org/en/latest/start.html">MathJax</a> 来展现数学公式，最便捷的使用方式是在</p>
+
+<p><code>themes/themesname/layouts/partials/header.html</code></p>
+
+<p>中加入</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text/javascript&#34;</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&#34;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML&#34;</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+</code></pre></div>
+<p>这是一个部署在 CloudFlare 上的基于 CDN 的 javascript, 当然也可以部署 MathJax 在本地，另外，为了更准确的识别行文中的数学公式，建议再加入</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text/x-mathjax-config&#34;</span><span class="o">&gt;</span>
+  <span class="nx">MathJax</span><span class="p">.</span><span class="nx">Hub</span><span class="p">.</span><span class="nx">Config</span><span class="p">({</span><span class="nx">tex2jax</span><span class="o">:</span> <span class="p">{</span><span class="nx">inlineMath</span><span class="o">:</span> <span class="p">[[</span><span class="s1">&#39;$&#39;</span><span class="p">,</span><span class="s1">&#39;$&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;\\(&#39;</span><span class="p">,</span><span class="s1">&#39;\\)&#39;</span><span class="p">]]}});</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+</code></pre></div>
+<p>测试结果如下：</p>
+
+<p>When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$</p>
+
+<hr />
+
+<h2 id="安装-mermaid">安装 mermaid</h2>
+
+<p><a href="https://mermaidjs.github.io/">mermaid</a> 用于画流程图以及甘特图, 主题 <a href="https://github.com/vjeantet/hugo-theme-docdock">docdock</a> 可以自动安装 mermaid, 接下来是在其它主题部署 mermaid 的步骤：</p>
+
+<ul>
+<li>安装 docdock 主题</li>
+</ul>
+<div class="highlight"><pre class="chroma">git submodule add https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock</pre></div>
+<ul>
+<li>复制 shortcode</li>
+</ul>
+<div class="highlight"><pre class="chroma">cp themes/docdock/layouts/shortcodes/mermaid.html themes/yourtheme/layouts/shortcodes/</pre></div>
+<ul>
+<li>复制 mermaid js 以及 css</li>
+</ul>
+<div class="highlight"><pre class="chroma">cp -r themes/docdock/static/mermaid themes/yourtheme/static/</pre></div>
+<p>测试结果如下：</p>
+
+<link href="https://example.com/mermaid/mermaid.css" type="text/css" rel="stylesheet"/>
+<script defer src="https://example.com/mermaid/mermaid.js">mermaid.initialize({startOnLoad:true});</script>
+<div class="mermaid" align="left" >
+graph LR;
+    A[Hard edge] -->|Link text| B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+</div>
+
+<link href="https://example.com/mermaid/mermaid.css" type="text/css" rel="stylesheet"/>
+<script defer src="https://example.com/mermaid/mermaid.js">mermaid.initialize({startOnLoad:true});</script>
+<div class="mermaid" align="left" >
+graph TD
+  A-->B;
+  A-->C;
+  B-->D;
+  C-->D;
+</div>
+
+<p><kbd>table</kbd> 展示</p>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Make</th>
+<th>Model</th>
+<th>Year</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td>Honda</td>
+<td>Accord</td>
+<td>2009</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Toyota</td>
+<td>Camry</td>
+<td>2012</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Hyundai</td>
+<td>Elantra</td>
+<td>2010</td>
+</tr>
+</tbody>
+</table>
+
+<p>未完待续</p>
+
+  </div>
+</p>
+
+
+<div class="pagination-content">
+  <div class="pure-menu pure-menu-horizontal">
+    <ul class="pure-menu-list">
+      <span class="pure-menu-item pure-menu-disabled">
+        Pages
+      </span>
+      <li class="pure-menu-item pure-menu-selected">
+        <a href="https://example.com/" class="pure-menu-link">First</a>
+      </li>
+      <li class="pure-menu-item pure-menu-selected">
+        <a href="https://example.com/" class="pure-menu-link">Last</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  <div class="footer-content">
+  <div class="pure-menu pure-menu-horizontal">
+    <ul class="pure-menu-list">
+      <li class="pure-menu-item">
+        <a class="pure-menu-link" href="https://github.com/someauthor">GitHub</a>
+      </li>
+      <li class="pure-menu-item">
+        <a class="pure-menu-link" href="https://twitter.com/someauthor">Twitter</a>
+      </li>
+      <li class="pure-menu-item">
+        <a class="pure-menu-link" href="https://medium.com/@someauthor">Medium</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="https://example.com/index.xml" class="pure-menu-link">RSS</a>
+      </li>
+      <li class="pure-menu-item">
+        <a class="pure-menu-link" id="btn-gototop">
+          <span class="fixup">&#x21e7;&#xfe0e;</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="pure-menu pure-menu-horizontal">
+    <ul class="pure-menu-list">
+      <li class="pure-menu-item pure-menu-disabled">
+        &copy; 2019 &mdash; Some Author — All rights reserved.
+      </li>
+    </ul>
+  </div>
+</div>
+<script>
+  function setElementsClass(selector, value) {
+    Array.prototype.forEach.call(
+      document.querySelectorAll(selector),
+      function(elem) { elem.className = value; }
+    );
+  }
+
+  setElementsClass('img', 'pure-img');
+  setElementsClass('table', 'pure-table');
+
+  function onResize() {
+      setElementsClass(
+        '.pure-menu', document.documentElement.clientWidth >= 568 ?
+              'pure-menu pure-menu-horizontal' : 'pure-menu'
+      );
+  }
+  onResize();
+  window.addEventListener('resize', onResize);
+
+  document.getElementById('btn-gototop').addEventListener('click', function() {
+    function scroll() {
+      if (window.pageYOffset > 0) { setTimeout(scroll, 8); }
+      window.scroll(0, window.pageYOffset - 128);
+    }
+    scroll();
+  });
+</script>
+
+  </div>
+  <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+</body>
 </html>
-

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>The Slick Theme | Slick</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="howdy
+#!/bin/bash echo Hello worlddef run_server(config: lsConfig.Config): loop = asyncio.get_event_loop() listenAddr = net.Address(config.localAddr, config.localPort) remoteAddr = net.Address(config.serverAddr, config.serverPort) server = LsLocal( loop=loop, password=config.password, listenAddr=listenAddr, remoteAddr=remoteAddr) def didListen(address): print(&#39;Listen to %s:%d\n&#39; % address) asyncio.ensure_future(server.listen(didListen)) loop.run_forever()&lt;!DOCTYPE html&gt; &lt;html lang=&#34;en&#34;&gt; &lt;head&gt; &lt;meta charset=&#34;UTF-8&#34;&gt; &lt;title&gt;Example HTML5 Document&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;p&gt;Test&lt;/p&gt; &lt;/body&gt; &lt;/html&gt; You can also use inline Markdown.
+   Inline Markdown In Table     italics bold strikethrough code    space" />
+  <meta name="author" content="Some Author" />
+  <meta name="generator" content="Hugo 0.45" />
+  <link href="https://example.com/index.xml" rel="alternate" type="application/rss+xml" title="Slick Feed" />
+  <link rel="shortcut icon" href="https://example.com/img/favicon.png" type="image/png" />
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://example.com/assets/style-compat.css" />
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://example.com/assets/style.css" />
+  <!--<![endif]-->
+</head>
+<body>
+<div class="pure-g">
+  <div class="pure-u-1-24 pure-u-md-5-24"></div>
+  <div class="pure-u-22-24 pure-u-md-14-24">
+  <div class="navigation-header">
+  <div class="pure-menu pure-menu-horizontal">
+    <a class="pure-menu-heading pure-menu-link" href="https://example.com/">
+      Slick
+    </a>
+    <ul class="pure-menu-list pull-end navigation-header-subtitle">
+      <li class="pure-menu-item pure-menu-disabled">Just another site</li>
+    </ul>
+  </div>
+</div>
+<div class="navigation-content">
+  <div class="pure-menu pure-menu-horizontal">
+    <ul class="pure-menu-list">
+      <li class="pure-menu-item">
+        <a  class="pure-menu-link" href="https://example.com/posts/">Posts</a>
+      </li>
+      <li class="pure-menu-item">
+        <a  class="pure-menu-link" href="https://example.com/categories/">Categories</a>
+      </li>
+      <li class="pure-menu-item">
+        <a  class="pure-menu-link" href="https://example.com/series/">Series</a>
+      </li>
+      <li class="pure-menu-item">
+        <a  class="pure-menu-link" href="https://example.com/tags/">Tags</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  
+<div>
+  <div>
+    <h1 class="post-title">The Slick Theme</h1>
+    <div class="post-meta">
+  Date &#x5b;
+    <time datetime="2019-01-23T17:14:04&#43;08:00">Wed, 23 Jan 2019 17:14:04 CST</time>
+  &#x5d;
+</div>
+
+  </div>
+  <div><p>howdy</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
+</span><span class="cp"></span><span class="nb">echo</span> Hello world</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">run_server</span><span class="p">(</span><span class="n">config</span><span class="p">:</span> <span class="n">lsConfig</span><span class="o">.</span><span class="n">Config</span><span class="p">):</span>
+    <span class="n">loop</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">get_event_loop</span><span class="p">()</span>
+
+    <span class="n">listenAddr</span> <span class="o">=</span> <span class="n">net</span><span class="o">.</span><span class="n">Address</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">localAddr</span><span class="p">,</span> <span class="n">config</span><span class="o">.</span><span class="n">localPort</span><span class="p">)</span>
+    <span class="n">remoteAddr</span> <span class="o">=</span> <span class="n">net</span><span class="o">.</span><span class="n">Address</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">serverAddr</span><span class="p">,</span> <span class="n">config</span><span class="o">.</span><span class="n">serverPort</span><span class="p">)</span>
+    <span class="n">server</span> <span class="o">=</span> <span class="n">LsLocal</span><span class="p">(</span>
+        <span class="n">loop</span><span class="o">=</span><span class="n">loop</span><span class="p">,</span>
+        <span class="n">password</span><span class="o">=</span><span class="n">config</span><span class="o">.</span><span class="n">password</span><span class="p">,</span>
+        <span class="n">listenAddr</span><span class="o">=</span><span class="n">listenAddr</span><span class="p">,</span>
+        <span class="n">remoteAddr</span><span class="o">=</span><span class="n">remoteAddr</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">didListen</span><span class="p">(</span><span class="n">address</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Listen to </span><span class="si">%s</span><span class="s1">:</span><span class="si">%d</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">address</span><span class="p">)</span>
+
+    <span class="n">asyncio</span><span class="o">.</span><span class="n">ensure_future</span><span class="p">(</span><span class="n">server</span><span class="o">.</span><span class="n">listen</span><span class="p">(</span><span class="n">didListen</span><span class="p">))</span>
+    <span class="n">loop</span><span class="o">.</span><span class="n">run_forever</span><span class="p">()</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Example HTML5 Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Test<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre></div>
+<p>You can also use inline Markdown.</p>
+
+<table>
+<thead>
+<tr>
+<th>Inline</th>
+<th>Markdown</th>
+<th>In</th>
+<th>Table</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><em>italics</em></td>
+<td><strong>bold</strong></td>
+<td><del>strikethrough</del></td>
+<td><code>code</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>space</p>
+</div>
+</div>
+  <div class="footer-content">
+  <div class="pure-menu pure-menu-horizontal">
+    <ul class="pure-menu-list">
+      <li class="pure-menu-item">
+        <a class="pure-menu-link" href="https://github.com/someauthor">GitHub</a>
+      </li>
+      <li class="pure-menu-item">
+        <a class="pure-menu-link" href="https://twitter.com/someauthor">Twitter</a>
+      </li>
+      <li class="pure-menu-item">
+        <a class="pure-menu-link" href="https://medium.com/@someauthor">Medium</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="https://example.com/index.xml" class="pure-menu-link">RSS</a>
+      </li>
+      <li class="pure-menu-item">
+        <a class="pure-menu-link" id="btn-gototop">
+          <span class="fixup">&#x21e7;&#xfe0e;</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="pure-menu pure-menu-horizontal">
+    <ul class="pure-menu-list">
+      <li class="pure-menu-item pure-menu-disabled">
+        &copy; 2019 &mdash; Some Author — All rights reserved.
+      </li>
+    </ul>
+  </div>
+</div>
+<script>
+  function setElementsClass(selector, value) {
+    Array.prototype.forEach.call(
+      document.querySelectorAll(selector),
+      function(elem) { elem.className = value; }
+    );
+  }
+
+  setElementsClass('img', 'pure-img');
+  setElementsClass('table', 'pure-table');
+
+  function onResize() {
+      setElementsClass(
+        '.pure-menu', document.documentElement.clientWidth >= 568 ?
+              'pure-menu pure-menu-horizontal' : 'pure-menu'
+      );
+  }
+  onResize();
+  window.addEventListener('resize', onResize);
+
+  document.getElementById('btn-gototop').addEventListener('click', function() {
+    function scroll() {
+      if (window.pageYOffset > 0) { setTimeout(scroll, 8); }
+      window.scroll(0, window.pageYOffset - 128);
+    }
+    scroll();
+  });
+</script>
+
+  </div>
+  <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+</body>
+</html>

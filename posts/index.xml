@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Posts on Felix Mon</title>
-		<link>https://felixmon.github.io/posts/</link>
+		<link>https://felixmon.dev/posts/</link>
 		<description>Recent content in Posts on Felix Mon</description>
 		<generator>Hugo 0.45 -- gohugo.io</generator>
 		<language>en</language>
@@ -10,13 +10,13 @@
 		<webMaster>some@email.com (Some Author)</webMaster>
 		<copyright>Felix Mon — All rights reserved.</copyright>
 		<lastBuildDate>Mon, 24 Sep 2018 00:44:54 +0800</lastBuildDate>
-		<atom:link href="https://felixmon.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		<atom:link href="https://felixmon.dev/posts/index.xml" rel="self" type="application/rss+xml" />
 		<item>
 			<title>HUGO 安装指南</title>
-			<link>https://felixmon.github.io/posts/deploy/</link>
+			<link>https://felixmon.dev/posts/deploy/</link>
 			<pubDate>Mon, 24 Sep 2018 00:44:54 +0800</pubDate>
 			<author>some@email.com (Some Author)</author>
-			<guid>https://felixmon.github.io/posts/deploy/</guid>
+			<guid>https://felixmon.dev/posts/deploy/</guid>
 			<description>
 
 &lt;h2 id=&#34;github-pages&#34;&gt;Github Pages&lt;/h2&gt;
@@ -121,8 +121,8 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;cp -r themes/docdock/static/mermaid themes/yourtheme/static/&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;测试结果如下：&lt;/p&gt;
 
-&lt;link href=&#34;https://felixmon.github.io/mermaid/mermaid.css&#34; type=&#34;text/css&#34; rel=&#34;stylesheet&#34;/&gt;
-&lt;script defer src=&#34;https://felixmon.github.io/mermaid/mermaid.js&#34;&gt;mermaid.initialize({startOnLoad:true});&lt;/script&gt;
+&lt;link href=&#34;https://felixmon.dev/mermaid/mermaid.css&#34; type=&#34;text/css&#34; rel=&#34;stylesheet&#34;/&gt;
+&lt;script defer src=&#34;https://felixmon.dev/mermaid/mermaid.js&#34;&gt;mermaid.initialize({startOnLoad:true});&lt;/script&gt;
 &lt;div class=&#34;mermaid&#34; align=&#34;left&#34; &gt;
 graph LR;
     A[Hard edge] --&gt;|Link text| B(Round edge)
@@ -131,8 +131,8 @@ graph LR;
     C --&gt;|Two| E[Result two]
 &lt;/div&gt;
 
-&lt;link href=&#34;https://felixmon.github.io/mermaid/mermaid.css&#34; type=&#34;text/css&#34; rel=&#34;stylesheet&#34;/&gt;
-&lt;script defer src=&#34;https://felixmon.github.io/mermaid/mermaid.js&#34;&gt;mermaid.initialize({startOnLoad:true});&lt;/script&gt;
+&lt;link href=&#34;https://felixmon.dev/mermaid/mermaid.css&#34; type=&#34;text/css&#34; rel=&#34;stylesheet&#34;/&gt;
+&lt;script defer src=&#34;https://felixmon.dev/mermaid/mermaid.js&#34;&gt;mermaid.initialize({startOnLoad:true});&lt;/script&gt;
 &lt;div class=&#34;mermaid&#34; align=&#34;left&#34; &gt;
 graph TD
   A--&gt;B;

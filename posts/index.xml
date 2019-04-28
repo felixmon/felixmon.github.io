@@ -47,6 +47,17 @@
 &lt;span class=&#34;c1&#34;&gt;#submodule
 &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;git submodule add -f -b master git@github.com:username/username.github.io.git public
 
+&lt;span class=&#34;c1&#34;&gt;# 如果github出现问题就强制更新：https://www.jianshu.com/p/c70ca3a02087
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;# git push -f https://stackoverflow.com/questions/39399804/updates-were-rejected-because-the-tip-of-your-current-branch-is-behind/39414252
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;
+&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; public
+git init
+git add .
+git commit -m &lt;span class=&#34;s2&#34;&gt;&amp;#34;some commit&amp;#34;&lt;/span&gt;
+git remote add origin &lt;span class=&#34;s2&#34;&gt;&amp;#34;https://github.com/username/username.github.io.git&amp;#34;&lt;/span&gt;
+git push -f origin master &lt;span class=&#34;c1&#34;&gt;# This should force update ALL files from local to remote
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;
+
 &lt;span class=&#34;c1&#34;&gt;# 新文章
 &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;hugo new posts/hello-world.md
 

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="description" content="Github Pages 登录 github 创建 username.github.io 的 repository
-下载 hugo 安装文件（MAC) # MAC环境下载hugo brew install hugo # 创建网站 hugo new site &lt;sitename&gt; # 创建主题（下载一个） git clone https://github.com/EmielH/tale-hugo.git themes/tale # 接下来是创建 github 的 repo，关于这点做法有很多，简单来说可以先 clone git clone https://github.com/username/username.github.io #submodule git submodule add -f -b master git@github.com:username/username.github.io.git public # 新文章 hugo new posts/hello-world.md # 设置根目录下 config.toml 的 theme 值 # 此处正确做法应该是将 theme 目录下的 config.toml 复制粘贴到站点根目录并覆盖原来的文件，否则一些特效会出不来。 theme = &#34;tale&#34; # 运行 hugo server -D 写一个 shell 完成自动化部署 #!" />
+下载 hugo 安装文件（MAC) # MAC环境下载hugo brew install hugo # 创建网站 hugo new site &lt;sitename&gt; # 创建主题（下载一个） git clone https://github.com/EmielH/tale-hugo.git themes/tale # 接下来是创建 github 的 repo，关于这点做法有很多，简单来说可以先 clone git clone https://github.com/username/username.github.io #submodule git submodule add -f -b master git@github.com:username/username.github.io.git public # 如果github出现问题就强制更新：https://www.jianshu.com/p/c70ca3a02087 # git push -f https://stackoverflow.com/questions/39399804/updates-were-rejected-because-the-tip-of-your-current-branch-is-behind/39414252  cd public git init git add . git commit -m &#34;some commit&#34; git remote add origin &#34;https://github." />
   <meta name="author" content="Some Author" />
   <meta name="generator" content="Hugo 0.45" />
   <link href="https://felixmon.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Felix Mon Feed" />
@@ -83,6 +83,17 @@
 
 <span class="c1">#submodule
 </span><span class="c1"></span>git submodule add -f -b master git@github.com:username/username.github.io.git public
+
+<span class="c1"># 如果github出现问题就强制更新：https://www.jianshu.com/p/c70ca3a02087
+</span><span class="c1"># git push -f https://stackoverflow.com/questions/39399804/updates-were-rejected-because-the-tip-of-your-current-branch-is-behind/39414252
+</span><span class="c1"></span>
+<span class="nb">cd</span> public
+git init
+git add .
+git commit -m <span class="s2">&#34;some commit&#34;</span>
+git remote add origin <span class="s2">&#34;https://github.com/username/username.github.io.git&#34;</span>
+git push -f origin master <span class="c1"># This should force update ALL files from local to remote
+</span><span class="c1"></span>
 
 <span class="c1"># 新文章
 </span><span class="c1"></span>hugo new posts/hello-world.md

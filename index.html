@@ -117,6 +117,17 @@
 <span class="c1">#submodule
 </span><span class="c1"></span>git submodule add -f -b master git@github.com:username/username.github.io.git public
 
+<span class="c1"># 如果github出现问题就强制更新：https://www.jianshu.com/p/c70ca3a02087
+</span><span class="c1"># git push -f https://stackoverflow.com/questions/39399804/updates-were-rejected-because-the-tip-of-your-current-branch-is-behind/39414252
+</span><span class="c1"></span>
+<span class="nb">cd</span> public
+git init
+git add .
+git commit -m <span class="s2">&#34;some commit&#34;</span>
+git remote add origin <span class="s2">&#34;https://github.com/username/username.github.io.git&#34;</span>
+git push -f origin master <span class="c1"># This should force update ALL files from local to remote
+</span><span class="c1"></span>
+
 <span class="c1"># 新文章
 </span><span class="c1"></span>hugo new posts/hello-world.md
 

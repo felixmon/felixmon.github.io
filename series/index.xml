@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Series on Felix Mon</title>
-		<link>https://felixmon.dev/series/</link>
+		<link>https://felixmon.github.io/series/</link>
 		<description>Recent content in Series on Felix Mon</description>
 		<generator>Hugo 0.45 -- gohugo.io</generator>
 		<language>en</language>
@@ -10,13 +10,13 @@
 		<webMaster>some@email.com (Some Author)</webMaster>
 		<copyright>Felix Mon — All rights reserved.</copyright>
 		<lastBuildDate>Sun, 28 Apr 2019 09:37:11 +0800</lastBuildDate>
-		<atom:link href="https://felixmon.dev/series/index.xml" rel="self" type="application/rss+xml" />
+		<atom:link href="https://felixmon.github.io/series/index.xml" rel="self" type="application/rss+xml" />
 		<item>
 			<title></title>
-			<link>https://felixmon.dev/series/</link>
+			<link>https://felixmon.github.io/series/</link>
 			<pubDate>Sun, 28 Apr 2019 09:37:11 +0800</pubDate>
 			<author>some@email.com (Some Author)</author>
-			<guid>https://felixmon.dev/series/</guid>
+			<guid>https://felixmon.github.io/series/</guid>
 			<description></description>
 		</item>
 	</channel>

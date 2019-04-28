@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>General on Felix Mon</title>
-		<link>https://felixmon.dev/categories/general/</link>
+		<link>https://felixmon.github.io/categories/general/</link>
 		<description>Recent content in General on Felix Mon</description>
 		<generator>Hugo 0.45 -- gohugo.io</generator>
 		<language>en</language>
@@ -10,13 +10,13 @@
 		<webMaster>some@email.com (Some Author)</webMaster>
 		<copyright>Felix Mon — All rights reserved.</copyright>
 		<lastBuildDate>Sun, 28 Apr 2019 09:37:11 +0800</lastBuildDate>
-		<atom:link href="https://felixmon.dev/categories/general/index.xml" rel="self" type="application/rss+xml" />
+		<atom:link href="https://felixmon.github.io/categories/general/index.xml" rel="self" type="application/rss+xml" />
 		<item>
 			<title>Test</title>
-			<link>https://felixmon.dev/posts/test/</link>
+			<link>https://felixmon.github.io/posts/test/</link>
 			<pubDate>Sun, 28 Apr 2019 09:37:11 +0800</pubDate>
 			<author>some@email.com (Some Author)</author>
-			<guid>https://felixmon.dev/posts/test/</guid>
+			<guid>https://felixmon.github.io/posts/test/</guid>
 			<description></description>
 		</item>
 	</channel>

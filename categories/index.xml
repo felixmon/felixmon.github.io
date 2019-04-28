@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Categories on Felix Mon</title>
-		<link>https://felixmon.dev/categories/</link>
+		<link>https://felixmon.github.io/categories/</link>
 		<description>Recent content in Categories on Felix Mon</description>
 		<generator>Hugo 0.45 -- gohugo.io</generator>
 		<language>en</language>
 		<managingEditor>some@email.com (Some Author)</managingEditor>
 		<webMaster>some@email.com (Some Author)</webMaster>
 		<copyright>Felix Mon — All rights reserved.</copyright>
-		<atom:link href="https://felixmon.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+		<atom:link href="https://felixmon.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
 		<item>
 			<title>General</title>
-			<link>https://felixmon.dev/categories/general/</link>
+			<link>https://felixmon.github.io/categories/general/</link>
 			<pubDate>Sun, 28 Apr 2019 09:37:11 +0800</pubDate>
 			<author>some@email.com (Some Author)</author>
-			<guid>https://felixmon.dev/categories/general/</guid>
+			<guid>https://felixmon.github.io/categories/general/</guid>
 			<description></description>
 		</item>
 	</channel>

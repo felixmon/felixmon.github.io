@@ -32,28 +32,31 @@
 &lt;p&gt;登录 github 创建 username.github.io 的 repository&lt;/p&gt;
 
 &lt;h2 id=&#34;下载-hugo-安装文件-mac&#34;&gt;下载 hugo 安装文件（MAC)&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;brew install hugo&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&#34;创建一个新网站&#34;&gt;创建一个新网站&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;hugo new site &amp;lt;sitename&amp;gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&#34;下载一个新主题&#34;&gt;下载一个新主题&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;git clone https://github.com/EmielH/tale-hugo.git themes/tale&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&#34;下载-repository&#34;&gt;下载 repository&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;git clone https://github.com/username/username.github.io&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&#34;创立-submodule&#34;&gt;创立 submodule&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;git submodule add -f -b master git@github.com:username/username.github.io.git public&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&#34;开始一篇新文章&#34;&gt;开始一篇新文章&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;hugo new posts/hello-world.md&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&#34;告诉-hugo-应用哪个主题&#34;&gt;告诉 hugo 应用哪个主题&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# MAC环境下载hugo
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;brew install hugo
 
-&lt;p&gt;设置根目录下 config.toml 的 theme 值&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;theme = &amp;#34;tale&amp;#34;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;mark&gt;此处正确做法应该是将 theme 目录下的 config.toml 复制粘贴到站点根目录并覆盖原来的文件，否则一些特效会出不来。&lt;/mark&gt;&lt;/p&gt;
+&lt;span class=&#34;c1&#34;&gt;# 创建网站
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;hugo new site &amp;lt;sitename&amp;gt;
 
-&lt;h2 id=&#34;尝试运行&#34;&gt;尝试运行&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;hugo server -D&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&#34;自动运行&#34;&gt;自动运行&lt;/h2&gt;
+&lt;span class=&#34;c1&#34;&gt;# 创建主题（下载一个）
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;git clone https://github.com/EmielH/tale-hugo.git themes/tale
 
-&lt;p&gt;创造一个 shell script 以使得 hugo 实现自动化部署，步骤最后一步可能会需要输入ssh key 密码。&lt;/p&gt;
+&lt;span class=&#34;c1&#34;&gt;# 接下来是创建 github 的 repo，关于这点做法有很多，简单来说可以先 clone
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;git clone https://github.com/username/username.github.io
+
+&lt;span class=&#34;c1&#34;&gt;#submodule
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;git submodule add -f -b master git@github.com:username/username.github.io.git public
+
+&lt;span class=&#34;c1&#34;&gt;# 新文章
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;hugo new posts/hello-world.md
+
+&lt;span class=&#34;c1&#34;&gt;# 设置根目录下 config.toml 的 theme 值
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;# 此处正确做法应该是将 theme 目录下的 config.toml 复制粘贴到站点根目录并覆盖原来的文件，否则一些特效会出不来。
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;theme&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;tale&amp;#34;&lt;/span&gt;
+
+&lt;span class=&#34;c1&#34;&gt;# 运行
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;hugo server -D&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;写一个-shell-完成自动化部署&#34;&gt;写一个 shell 完成自动化部署&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/bash
 &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;
 &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; -e &lt;span class=&#34;s2&#34;&gt;&amp;#34;\033[0;32mDeploying updates to GitHub...\033[0m&amp;#34;&lt;/span&gt;

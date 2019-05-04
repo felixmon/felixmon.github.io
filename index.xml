@@ -66,6 +66,14 @@ hugo new posts/hello-world.md
 
 &lt;span class=&#34;c1&#34;&gt;# 运行&lt;/span&gt;
 hugo server -D&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;自定义域名&#34;&gt;自定义域名&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;参考文章1：&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/#use-a-custom-domain&#34;&gt;HUGO 官方: Use a Custom Domain&lt;/a&gt;，即需要在 static 目录下建立一个 CNAME 文件，文件内容是且仅是域名本身。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;参考文章2: &lt;a href=&#34;https://help.github.com/en/articles/setting-up-an-apex-domain&#34;&gt;Github 官方: Configuring A records with your DNS provider&lt;/a&gt;，设置 185.199.108.153 等 A 记录。&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
 &lt;h2 id=&#34;写一个-shell-完成自动化部署&#34;&gt;写一个 shell 完成自动化部署&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/bash
 &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;

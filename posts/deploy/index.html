@@ -6,16 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="description" content="Github Pages 登录 github 创建 username.github.io 的 repository
-下载 hugo 安装文件（MAC) # MAC环境下载hugo brew install hugo # 创建网站 hugo new site &lt;sitename&gt; # 创建主题（下载一个） git clone https://github.com/EmielH/tale-hugo.git themes/tale # 接下来是创建 github 的 repo，关于这点做法有很多，简单来说可以先 clone git clone https://github.com/username/username.github.io #submodule git submodule add -f -b master git@github.com:username/username.github.io.git public # 如果github出现问题就强制更新：https://www.jianshu.com/p/c70ca3a02087 # git push -f https://stackoverflow.com/questions/39399804/updates-were-rejected-because-the-tip-of-your-current-branch-is-behind/39414252  cd public git init git add . git commit -m &#34;some commit&#34; git remote add origin &#34;https://github." />
+下载 hugo 安装文件（MAC) # MAC环境下载hugo brew install hugo # 创建网站 hugo new site &lt;sitename&gt; # 创建主题（下载一个） git clone https://github.com/EmielH/tale-hugo.git themes/tale # 接下来是创建 github 的 repo，关于这点做法有很多，简单来说可以先 clone git clone https://github.com/username/username.github.io #submodule git submodule add -f -b master git@github.com:username/username.github.io.git public # 如果github出现问题就强制更新：https://www.jianshu.com/p/c70ca3a02087 # git push -f https://stackoverflow.com/questions/39399804/updates-were-rejected-because-the-tip-of-your-current-branch-is-behind/39414252 cd public git init git add . git commit -m &#34;some commit&#34; git remote add origin &#34;https://github." />
   <meta name="author" content="Some Author" />
-  <meta name="generator" content="Hugo 0.45" />
-  <link href="https://felixmon.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Felix Mon Feed" />
-  <link rel="shortcut icon" href="https://felixmon.github.io/img/favicon.png" type="image/png" />
+  <meta name="generator" content="Hugo 0.55.4" />
+  <link href="https://felixmon.dev/index.xml" rel="alternate" type="application/rss+xml" title="Felix Mon Feed" />
+  <link rel="shortcut icon" href="https://felixmon.dev/img/favicon.png" type="image/png" />
   <!--[if lte IE 8]>
-  <link rel="stylesheet" href="https://felixmon.github.io/assets/style-compat.css" />
+  <link rel="stylesheet" href="https://felixmon.dev/assets/style-compat.css" />
   <![endif]-->
   <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="https://felixmon.github.io/assets/style.css" />
+  <link rel="stylesheet" href="https://felixmon.dev/assets/style.css" />
   <!--<![endif]-->
 </head>
 <body>
@@ -24,7 +24,7 @@
   <div class="pure-u-22-24 pure-u-md-14-24">
   <div class="navigation-header">
   <div class="pure-menu pure-menu-horizontal">
-    <a class="pure-menu-heading pure-menu-link" href="https://felixmon.github.io/">
+    <a class="pure-menu-heading pure-menu-link" href="https://felixmon.dev/">
       Felix Mon
     </a>
     <ul class="pure-menu-list pull-end navigation-header-subtitle">
@@ -36,16 +36,16 @@
   <div class="pure-menu pure-menu-horizontal">
     <ul class="pure-menu-list">
       <li class="pure-menu-item">
-        <a  class="pure-menu-link" href="https://felixmon.github.io/posts/">Posts</a>
+        <a  class="pure-menu-link" href="https://felixmon.dev/posts/">Posts</a>
       </li>
       <li class="pure-menu-item">
-        <a  class="pure-menu-link" href="https://felixmon.github.io/categories/">Categories</a>
+        <a  class="pure-menu-link" href="https://felixmon.dev/categories/">Categories</a>
       </li>
       <li class="pure-menu-item">
-        <a  class="pure-menu-link" href="https://felixmon.github.io/series/">Series</a>
+        <a  class="pure-menu-link" href="https://felixmon.dev/series/">Series</a>
       </li>
       <li class="pure-menu-item">
-        <a  class="pure-menu-link" href="https://felixmon.github.io/tags/">Tags</a>
+        <a  class="pure-menu-link" href="https://felixmon.dev/tags/">Tags</a>
       </li>
     </ul>
   </div>
@@ -69,63 +69,63 @@
 <p>登录 github 创建 username.github.io 的 repository</p>
 
 <h2 id="下载-hugo-安装文件-mac">下载 hugo 安装文件（MAC)</h2>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># MAC环境下载hugo
-</span><span class="c1"></span>brew install hugo
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># MAC环境下载hugo</span>
+brew install hugo
 
-<span class="c1"># 创建网站
-</span><span class="c1"></span>hugo new site &lt;sitename&gt;
+<span class="c1"># 创建网站</span>
+hugo new site &lt;sitename&gt;
 
-<span class="c1"># 创建主题（下载一个）
-</span><span class="c1"></span>git clone https://github.com/EmielH/tale-hugo.git themes/tale
+<span class="c1"># 创建主题（下载一个）</span>
+git clone https://github.com/EmielH/tale-hugo.git themes/tale
 
-<span class="c1"># 接下来是创建 github 的 repo，关于这点做法有很多，简单来说可以先 clone
-</span><span class="c1"></span>git clone https://github.com/username/username.github.io
+<span class="c1"># 接下来是创建 github 的 repo，关于这点做法有很多，简单来说可以先 clone</span>
+git clone https://github.com/username/username.github.io
 
-<span class="c1">#submodule
-</span><span class="c1"></span>git submodule add -f -b master git@github.com:username/username.github.io.git public
+<span class="c1">#submodule</span>
+git submodule add -f -b master git@github.com:username/username.github.io.git public
 
-<span class="c1"># 如果github出现问题就强制更新：https://www.jianshu.com/p/c70ca3a02087
-</span><span class="c1"># git push -f https://stackoverflow.com/questions/39399804/updates-were-rejected-because-the-tip-of-your-current-branch-is-behind/39414252
-</span><span class="c1"></span>
+<span class="c1"># 如果github出现问题就强制更新：https://www.jianshu.com/p/c70ca3a02087</span>
+<span class="c1"># git push -f https://stackoverflow.com/questions/39399804/updates-were-rejected-because-the-tip-of-your-current-branch-is-behind/39414252</span>
+
 <span class="nb">cd</span> public
 git init
 git add .
 git commit -m <span class="s2">&#34;some commit&#34;</span>
 git remote add origin <span class="s2">&#34;https://github.com/username/username.github.io.git&#34;</span>
-git push -f origin master <span class="c1"># This should force update ALL files from local to remote
-</span><span class="c1"></span>
+git push -f origin master <span class="c1"># This should force update ALL files from local to remote</span>
 
-<span class="c1"># 新文章
-</span><span class="c1"></span>hugo new posts/hello-world.md
 
-<span class="c1"># 设置根目录下 config.toml 的 theme 值
-</span><span class="c1"># 此处正确做法应该是将 theme 目录下的 config.toml 复制粘贴到站点根目录并覆盖原来的文件，否则一些特效会出不来。
-</span><span class="c1"></span><span class="nv">theme</span> <span class="o">=</span> <span class="s2">&#34;tale&#34;</span>
+<span class="c1"># 新文章</span>
+hugo new posts/hello-world.md
 
-<span class="c1"># 运行
-</span><span class="c1"></span>hugo server -D</code></pre></div>
+<span class="c1"># 设置根目录下 config.toml 的 theme 值</span>
+<span class="c1"># 此处正确做法应该是将 theme 目录下的 config.toml 复制粘贴到站点根目录并覆盖原来的文件，否则一些特效会出不来。</span>
+<span class="nv">theme</span> <span class="o">=</span> <span class="s2">&#34;tale&#34;</span>
+
+<span class="c1"># 运行</span>
+hugo server -D</code></pre></div>
 <h2 id="写一个-shell-完成自动化部署">写一个 shell 完成自动化部署</h2>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="cp">#!/bin/bash
 </span><span class="cp"></span>
 <span class="nb">echo</span> -e <span class="s2">&#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;</span>
 
-<span class="c1"># Build the project.
-</span><span class="c1"></span>hugo -D
+<span class="c1"># Build the project.</span>
+hugo -D
 
-<span class="c1"># Go To Public folder
-</span><span class="c1"></span><span class="nb">cd</span> public
-<span class="c1"># Add changes to git.
-</span><span class="c1"></span>git add .
+<span class="c1"># Go To Public folder</span>
+<span class="nb">cd</span> public
+<span class="c1"># Add changes to git.</span>
+git add .
 
-<span class="c1"># Commit changes.
-</span><span class="c1"></span><span class="nv">msg</span><span class="o">=</span><span class="s2">&#34;rebuilding site `date`&#34;</span>
+<span class="c1"># Commit changes.</span>
+<span class="nv">msg</span><span class="o">=</span><span class="s2">&#34;rebuilding site `date`&#34;</span>
 <span class="k">if</span> <span class="o">[</span> <span class="nv">$#</span> -eq <span class="m">1</span> <span class="o">]</span>
   <span class="k">then</span> <span class="nv">msg</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span>
 <span class="k">fi</span>
 git commit -m <span class="s2">&#34;</span><span class="nv">$msg</span><span class="s2">&#34;</span>
 
-<span class="c1"># Push source and build repos.
-</span><span class="c1"></span>git push origin master</code></pre></div>
+<span class="c1"># Push source and build repos.</span>
+git push origin master</code></pre></div>
 <p>保存上述 shell scripts 为 deploy.sh 后 chmod +x 使其可执行，以后每次改动或者新增文章，只要 ./deploy.sh 就可以了。</p>
 
 <p>仍需解决的问题：</p>
@@ -180,8 +180,8 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$</p>
 <div class="highlight"><pre class="chroma">cp -r themes/docdock/static/mermaid themes/yourtheme/static/</pre></div>
 <p>测试结果如下：</p>
 
-<link href="https://felixmon.github.io/mermaid/mermaid.css" type="text/css" rel="stylesheet"/>
-<script defer src="https://felixmon.github.io/mermaid/mermaid.js">mermaid.initialize({startOnLoad:true});</script>
+<link href="https://felixmon.dev/mermaid/mermaid.css" type="text/css" rel="stylesheet"/>
+<script defer src="https://felixmon.dev/mermaid/mermaid.js">mermaid.initialize({startOnLoad:true});</script>
 <div class="mermaid" align="left" >
 graph LR;
     A[Hard edge] -->|Link text| B(Round edge)
@@ -190,8 +190,8 @@ graph LR;
     C -->|Two| E[Result two]
 </div>
 
-<link href="https://felixmon.github.io/mermaid/mermaid.css" type="text/css" rel="stylesheet"/>
-<script defer src="https://felixmon.github.io/mermaid/mermaid.js">mermaid.initialize({startOnLoad:true});</script>
+<link href="https://felixmon.dev/mermaid/mermaid.css" type="text/css" rel="stylesheet"/>
+<script defer src="https://felixmon.dev/mermaid/mermaid.js">mermaid.initialize({startOnLoad:true});</script>
 <div class="mermaid" align="left" >
 graph TD
   A-->B;
@@ -243,7 +243,7 @@ graph TD
   <div class="pure-menu pure-menu-horizontal">
     <ul class="pure-menu-list">
       <li class="pure-menu-item">
-        <a class="pure-menu-link" href="https://felixmon.github.io/">GitHub</a>
+        <a class="pure-menu-link" href="https://felixmon.dev/">GitHub</a>
       </li>
       <li class="pure-menu-item">
         <a class="pure-menu-link" href="https://twitter.com/google">Twitter</a>
@@ -252,7 +252,7 @@ graph TD
         <a class="pure-menu-link" href="https://medium.com/@someauthor">Medium</a>
       </li>
       <li class="pure-menu-item">
-        <a href="https://felixmon.github.io/index.xml" class="pure-menu-link">RSS</a>
+        <a href="https://felixmon.dev/index.xml" class="pure-menu-link">RSS</a>
       </li>
       <li class="pure-menu-item">
         <a class="pure-menu-link" id="btn-gototop">

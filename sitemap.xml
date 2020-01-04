@@ -3,13 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://felixmon.dev/tags/</loc>
+    <loc>https://felixmon.dev/series/</loc>
     <lastmod>2019-04-28T09:37:11+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://felixmon.dev/series/</loc>
+    <loc>https://felixmon.dev/tags/</loc>
     <lastmod>2019-04-28T09:37:11+08:00</lastmod>
     <priority>0</priority>
   </url>

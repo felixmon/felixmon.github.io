@@ -3,35 +3,61 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://felixmon.dev/</loc>
-    <lastmod>2018-09-24T00:44:54+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://felixmon.dev/posts/deploy/</loc>
-    <lastmod>2018-09-24T00:44:54+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://felixmon.dev/posts/</loc>
-    <lastmod>2018-09-24T00:44:54+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://felixmon.dev/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://felixmon.dev/series/</loc>
+    <lastmod>2020-02-25T02:11:39+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://felixmon.dev/tags/</loc>
+    <lastmod>2020-02-25T02:11:39+08:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://felixmon.dev/categories/</loc>
+    <lastmod>2020-02-25T02:11:39+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://felixmon.dev/</loc>
+    <lastmod>2020-02-25T02:11:39+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://felixmon.dev/categories/general/</loc>
+    <lastmod>2020-02-25T02:11:39+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://felixmon.dev/posts/</loc>
+    <lastmod>2020-02-25T02:11:39+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://felixmon.dev/series/</loc>
+    <lastmod>2020-02-25T02:11:39+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://felixmon.dev/tags/</loc>
+    <lastmod>2020-02-25T02:11:39+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://felixmon.dev/posts/math-books-for-programmer/</loc>
+    <lastmod>2020-02-25T02:11:39+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://felixmon.dev/posts/deploy/</loc>
+    <lastmod>2018-09-24T00:44:54+08:00</lastmod>
   </url>
   
 </urlset>

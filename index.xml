@@ -9,10 +9,19 @@
     <managingEditor>some@email.com (Felix Mon)</managingEditor>
     <webMaster>some@email.com (Felix Mon)</webMaster>
     <copyright>Felix Mon — All rights reserved.</copyright>
-    <lastBuildDate>Mon, 24 Sep 2018 00:44:54 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 25 Feb 2020 02:11:39 +0800</lastBuildDate>
     
 	<atom:link href="https://felixmon.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>程序员的数学（三本）&#34;</title>
+      <link>https://felixmon.dev/posts/math-books-for-programmer/</link>
+      <pubDate>Tue, 25 Feb 2020 02:11:39 +0800</pubDate>
+      <author>some@email.com (Felix Mon)</author>
+      <guid>https://felixmon.dev/posts/math-books-for-programmer/</guid>
+      <description>https://github.com/liyu13264/programmer_math</description>
+    </item>
     
     <item>
       <title>HUGO 安装指南</title>

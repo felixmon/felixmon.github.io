@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Felix Mon</title>
-    <link>https://felixmon.dev/tags/</link>
-    <description>Recent content in Tags on Felix Mon</description>
+    <title>General on Felix Mon</title>
+    <link>https://felixmon.dev/categories/general/</link>
+    <description>Recent content in General on Felix Mon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>some@email.com (Felix Mon)</managingEditor>
@@ -11,20 +11,15 @@
     <copyright>Felix Mon — All rights reserved.</copyright>
     <lastBuildDate>Tue, 25 Feb 2020 02:11:39 +0800</lastBuildDate>
     
-	<atom:link href="https://felixmon.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://felixmon.dev/categories/general/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title></title>
-      <link>https://felixmon.dev/tags/</link>
+      <title>程序员的数学（三本）&#34;</title>
+      <link>https://felixmon.dev/posts/math-books-for-programmer/</link>
       <pubDate>Tue, 25 Feb 2020 02:11:39 +0800</pubDate>
       <author>some@email.com (Felix Mon)</author>
-      <guid>https://felixmon.dev/tags/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
-</rss>d>
+      <guid>https://felixmon.dev/posts/math-books-for-programmer/</guid>
       <description>https://github.com/liyu13264/programmer_math</description>
     </item>
     

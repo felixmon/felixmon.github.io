@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>General on Keep Calm and Carry On Coding</title>
+    <link>/categories/general/</link>
+    <description>Recent content in General on Keep Calm and Carry On Coding</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>MIT License</copyright>
+    <lastBuildDate>Tue, 25 Feb 2020 23:22:59 +0800</lastBuildDate>
+    
+        <atom:link href="/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Installaion Guide of MongoDB on MAC</title>
+      <link>/posts/installaion-guide-of-mongodb-on-mac/</link>
+      <pubDate>Tue, 25 Feb 2020 23:22:59 +0800</pubDate>
+      
+      <guid>/posts/installaion-guide-of-mongodb-on-mac/</guid>
+      <description>Installaion Guide of MongoDB on MAC Guide on the Official Website
+  brew tap mongodb/brew   brew install mongo   mongod --config /usr/local/etc/mongod.conf   Alternatively, to run MongoDB as a macOS service, issue the following (the process uses the /usr/local/etc/mongod.conf file, created during the install):
+brew services start mongodb-community@4.0   MongoDB GUI: Robo 3T http://robomongo.org
+  </description>
+    </item>
+    
+    <item>
+      <title>程序员的数学（三本）</title>
+      <link>/posts/math-books-for-programmer/</link>
+      <pubDate>Tue, 25 Feb 2020 02:11:39 +0800</pubDate>
+      
+      <guid>/posts/math-books-for-programmer/</guid>
+      <description>https://github.com/liyu13264/programmer_math</description>
+    </item>
+    
+  </channel>
+</rss>

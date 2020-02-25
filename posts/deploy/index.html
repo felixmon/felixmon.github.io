@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.65.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>HUGO 安装指南&nbsp;&ndash;&nbsp;Keep Calm and Carry On Coding</title><link rel="stylesheet" href="/css/core.min.cf8ed48526ff196fc19fffd9d9778e0daaea7dbe4f20b4df97cdd483aa877f02522bd6ef294c8eae340a0e4446c33cc7.css" integrity="sha384-z47UhSb/GW/Bn//Z2XeODarqfb5PILTfl83Ug6qHfwJSK9bvKUyOrjQKDkRGwzzH"><body>
+    <div class="base-body"><section id="header" class="site header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><span class="site name">Keep Calm and Carry On Coding</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/categories/">Categories</a><a class="nav item" href="/tags/">Tags</a><a class="nav item" href="/about">About</a></nav></div></span></div></section><div id="content"><div class="article-container"><section class="article header">
+    <h1 class="article title">HUGO 安装指南</h1><p class="article date">Monday, September 24, 2018</p></section><article class="article markdown-body"><h2 id="github-pages">Github Pages</h2>
+<p>登录 github 创建 username.github.io 的 repository</p>
+<h2 id="下载-hugo-安装文件mac">下载 hugo 安装文件（MAC)</h2>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># MAC环境下载hugo</span>
+brew install hugo
+
+<span class="c1"># 创建网站</span>
+hugo new site &lt;sitename&gt;
+
+<span class="c1"># 创建主题（下载一个）</span>
+git clone https://github.com/EmielH/tale-hugo.git themes/tale
+
+<span class="c1"># 接下来是创建 github 的 repo，关于这点做法有很多，简单来说可以先 clone</span>
+git clone https://github.com/username/username.github.io
+
+<span class="c1">#submodule</span>
+git submodule add -f -b master git@github.com:username/username.github.io.git public
+
+<span class="c1"># 如果github出现问题就强制更新：https://www.jianshu.com/p/c70ca3a02087</span>
+<span class="c1"># git push -f https://stackoverflow.com/questions/39399804/updates-were-rejected-because-the-tip-of-your-current-branch-is-behind/39414252</span>
+
+<span class="nb">cd</span> public
+git init
+git add .
+git commit -m <span class="s2">&#34;some commit&#34;</span>
+git remote add origin <span class="s2">&#34;https://github.com/username/username.github.io.git&#34;</span>
+git push -f origin master <span class="c1"># This should force update ALL files from local to remote</span>
+
+
+<span class="c1"># 新文章</span>
+hugo new posts/hello-world.md
+
+<span class="c1"># 设置根目录下 config.toml 的 theme 值</span>
+<span class="c1"># 此处正确做法应该是将 theme 目录下的 config.toml 复制粘贴到站点根目录并覆盖原来的文件，否则一些特效会出不来。</span>
+<span class="nv">theme</span> <span class="o">=</span> <span class="s2">&#34;tale&#34;</span>
+
+<span class="c1"># 运行</span>
+hugo server -D
+</code></pre></div><h2 id="自定义域名">自定义域名</h2>
+<ol>
+<li>
+<p>参考文章1：<a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/#use-a-custom-domain"target="_blank">HUGO 官方: Use a Custom Domain</a>，即需要在 static 目录下建立一个 CNAME 文件，文件内容是且仅是域名本身。</p>
+</li>
+<li>
+<p>参考文章2: <a href="https://help.github.com/en/articles/setting-up-an-apex-domain"target="_blank">Github 官方: Configuring A records with your DNS provider</a>，设置 185.199.108.153 等 A 记录。</p>
+</li>
+</ol>
+<h2 id="写一个-shell-完成自动化部署">写一个 shell 完成自动化部署</h2>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="cp">#!/bin/bash
+</span><span class="cp"></span>
+<span class="nb">echo</span> -e <span class="s2">&#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;</span>
+
+<span class="c1"># Build the project.</span>
+hugo -D
+
+<span class="c1"># Go To Public folder</span>
+<span class="nb">cd</span> public
+<span class="c1"># Add changes to git.</span>
+git add .
+
+<span class="c1"># Commit changes.</span>
+<span class="nv">msg</span><span class="o">=</span><span class="s2">&#34;rebuilding site `date`&#34;</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$#</span> -eq <span class="m">1</span> <span class="o">]</span>
+  <span class="k">then</span> <span class="nv">msg</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span>
+<span class="k">fi</span>
+git commit -m <span class="s2">&#34;</span><span class="nv">$msg</span><span class="s2">&#34;</span>
+
+<span class="c1"># Push source and build repos.</span>
+git push origin master
+</code></pre></div><p>保存上述 shell scripts 为 deploy.sh 后 chmod +x 使其可执行，以后每次改动或者新增文章，只要 ./deploy.sh 就可以了。</p>
+<p>仍需解决的问题：</p>
+<ol>
+<li>
+<p>hugo 并不提供删除文章的命令，因为直接在文件夹 content 删除即可，但这样会使得 public 文件夹里的文章不会随着 content 文章的删除而删除，如此一来， git push 的时候，所删除的文章也不会反映到 github 上；</p>
+</li>
+<li>
+<p>如果文章中的 markdown 语法或者其它 hugo 语法错误，那么 hugo -D 的执行结果就会出现错误，，进而导致后续的一系列问题；</p>
+</li>
+<li>
+<p>每次执行 deploy.sh 都需要输入 ssh key 密码</p>
+</li>
+</ol>
+<hr>
+<h2 id="识别数学公式">识别数学公式</h2>
+<p>Hugo 采用 <a href="https://docs.mathjax.org/en/latest/start.html"target="_blank">MathJax</a> 来展现数学公式，最便捷的使用方式是在</p>
+<p><code>themes/themesname/layouts/partials/header.html</code></p>
+<p>中加入</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text/javascript&#34;</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&#34;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML&#34;</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+</code></pre></div><p>这是一个部署在 CloudFlare 上的基于 CDN 的 javascript, 当然也可以部署 MathJax 在本地，另外，为了更准确的识别行文中的数学公式，建议再加入</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text/x-mathjax-config&#34;</span><span class="o">&gt;</span>
+  <span class="nx">MathJax</span><span class="p">.</span><span class="nx">Hub</span><span class="p">.</span><span class="nx">Config</span><span class="p">({</span><span class="nx">tex2jax</span><span class="o">:</span> <span class="p">{</span><span class="nx">inlineMath</span><span class="o">:</span> <span class="p">[[</span><span class="s1">&#39;$&#39;</span><span class="p">,</span><span class="s1">&#39;$&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;\\(&#39;</span><span class="p">,</span><span class="s1">&#39;\\)&#39;</span><span class="p">]]}});</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+</code></pre></div><p>测试结果如下：</p>
+<p>When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$</p>
+<hr>
+<h2 id="安装-mermaid">安装 mermaid</h2>
+<p><a href="https://mermaidjs.github.io/"target="_blank">mermaid</a> 用于画流程图以及甘特图, 主题 <a href="https://github.com/vjeantet/hugo-theme-docdock"target="_blank">docdock</a> 可以自动安装 mermaid, 接下来是在其它主题部署 mermaid 的步骤：</p>
+<ul>
+<li>安装 docdock 主题</li>
+</ul>
+<pre><code>git submodule add https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock
+</code></pre><ul>
+<li>复制 shortcode</li>
+</ul>
+<pre><code>cp themes/docdock/layouts/shortcodes/mermaid.html themes/yourtheme/layouts/shortcodes/
+</code></pre><ul>
+<li>复制 mermaid js 以及 css</li>
+</ul>
+<pre><code>cp -r themes/docdock/static/mermaid themes/yourtheme/static/
+</code></pre><p>测试结果如下：</p>
+<link href="/mermaid/mermaid.css" type="text/css" rel="stylesheet"/>
+<script defer src="/mermaid/mermaid.js">mermaid.initialize({startOnLoad:true});</script>
+<div class="mermaid" align="left" >
+graph LR;
+    A[Hard edge] -->|Link text| B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+</div>
+<link href="/mermaid/mermaid.css" type="text/css" rel="stylesheet"/>
+<script defer src="/mermaid/mermaid.js">mermaid.initialize({startOnLoad:true});</script>
+<div class="mermaid" align="left" >
+graph TD
+  A-->B;
+  A-->C;
+  B-->D;
+  C-->D;
+</div>
+<p><kbd>table</kbd> 展示</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Make</th>
+<th>Model</th>
+<th>Year</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Honda</td>
+<td>Accord</td>
+<td>2009</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Toyota</td>
+<td>Camry</td>
+<td>2012</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Hyundai</td>
+<td>Elantra</td>
+<td>2010</td>
+</tr>
+</tbody>
+</table>
+<p>未完待续</p>
+</article></div><section class="article navigation"><p><a class="link" href="/posts/math-books-for-programmer/"><span class="li">&larr;</span>程序员的数学（三本）</a></p></section></div><section id="footer" class="footer"><div class="footer-wrap">
+    <p class="copyright">MIT License</p>
+    <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
+        target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank">Notepadium</a></p>
+</div></section></div>
+</body>
+
+</html>

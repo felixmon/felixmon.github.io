@@ -1,36 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Felix Mon</title>
-    <link>https://felixmon.dev/posts/</link>
-    <description>Recent content in Posts on Felix Mon</description>
+    <title>Posts on Notepadium</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on Notepadium</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>some@email.com (Felix Mon)</managingEditor>
-    <webMaster>some@email.com (Felix Mon)</webMaster>
-    <copyright>Felix Mon — All rights reserved.</copyright>
+    <language>zh-cn</language>
+    <copyright>©2019 Notepadium.</copyright>
     <lastBuildDate>Tue, 25 Feb 2020 02:11:39 +0800</lastBuildDate>
     
-	<atom:link href="https://felixmon.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>程序员的数学（三本）&#34;</title>
-      <link>https://felixmon.dev/posts/math-books-for-programmer/</link>
+      <title>程序员的数学（三本）</title>
+      <link>/posts/math-books-for-programmer/</link>
       <pubDate>Tue, 25 Feb 2020 02:11:39 +0800</pubDate>
-      <author>some@email.com (Felix Mon)</author>
-      <guid>https://felixmon.dev/posts/math-books-for-programmer/</guid>
+      
+      <guid>/posts/math-books-for-programmer/</guid>
       <description>https://github.com/liyu13264/programmer_math</description>
     </item>
     
     <item>
       <title>HUGO 安装指南</title>
-      <link>https://felixmon.dev/posts/deploy/</link>
+      <link>/posts/deploy/</link>
       <pubDate>Mon, 24 Sep 2018 00:44:54 +0800</pubDate>
-      <author>some@email.com (Felix Mon)</author>
-      <guid>https://felixmon.dev/posts/deploy/</guid>
-      <description>Github Pages 登录 github 创建 username.github.io 的 repository
-下载 hugo 安装文件（MAC) # MAC环境下载hugo brew install hugo # 创建网站 hugo new site &amp;lt;sitename&amp;gt; # 创建主题（下载一个） git clone https://github.com/EmielH/tale-hugo.git themes/tale # 接下来是创建 github 的 repo，关于这点做法有很多，简单来说可以先 clone git clone https://github.com/username/username.github.io #submodule git submodule add -f -b master git@github.com:username/username.github.io.git public # 如果github出现问题就强制更新：https://www.jianshu.com/p/c70ca3a02087 # git push -f https://stackoverflow.com/questions/39399804/updates-were-rejected-because-the-tip-of-your-current-branch-is-behind/39414252 cd public git init git add . git commit -m &amp;#34;some commit&amp;#34; git remote add origin &amp;#34;https://github.</description>
+      
+      <guid>/posts/deploy/</guid>
+      <description>Github Pages 登录 github 创建 username.github.io 的 repository 下载 hugo 安装文件（MAC) # MAC环境下载hugo brew install hugo # 创建网站 hugo new site &amp;lt;sitename&amp;gt; # 创建主题（下载一个） git clone https://github.com/EmielH/tale-hugo.git themes/tale # 接下来是创建 github 的</description>
     </item>
     
   </channel>

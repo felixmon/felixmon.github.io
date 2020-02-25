@@ -30,5 +30,17 @@
       <description>Github Pages 登录 github 创建 username.github.io 的 repository 下载 hugo 安装文件（MAC) # MAC环境下载hugo brew install hugo # 创建网站 hugo new site &amp;lt;sitename&amp;gt; # 创建主题（下载一个） git clone https://github.com/EmielH/tale-hugo.git themes/tale # 接下来是创建 github 的</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>/posts/installation-guide-mongodb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/installation-guide-mongodb/</guid>
+      <description>Installaion Guide of MongoDB on MAC Guide on the Official Website
+  brew tap mongodb/brew   brew install mongo   mongod --config /usr/local/etc/mongod.conf   Alternatively, to run MongoDB as a macOS service, issue the following (the process uses the /usr/local/etc/mongod.conf file, created during the install):
+brew services start mongodb-community@4.0   MongoDB GUI: Robo 3T http://robomongo.org
+  </description>
+    </item>
+    
   </channel>
 </rss>

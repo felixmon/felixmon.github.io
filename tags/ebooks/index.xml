@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>math,ebooks on Keep Calm and Carry On Coding</title>
-    <link>/tags/mathebooks/</link>
-    <description>Recent content in math,ebooks on Keep Calm and Carry On Coding</description>
+    <title>ebooks on Keep Calm and Carry On Coding</title>
+    <link>/tags/ebooks/</link>
+    <description>Recent content in ebooks on Keep Calm and Carry On Coding</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>MIT License</copyright>
     <lastBuildDate>Tue, 25 Feb 2020 02:11:39 +0800</lastBuildDate>
     
-        <atom:link href="/tags/mathebooks/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/tags/ebooks/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

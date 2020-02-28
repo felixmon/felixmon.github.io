@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>MIT License</copyright>
-    <lastBuildDate>Mon, 24 Sep 2018 00:44:54 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 24 Feb 2020 00:44:54 +0800</lastBuildDate>
     
         <atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,10 +15,10 @@
     <item>
       <title>HUGO 安装指南</title>
       <link>/posts/deploy/</link>
-      <pubDate>Mon, 24 Sep 2018 00:44:54 +0800</pubDate>
+      <pubDate>Mon, 24 Feb 2020 00:44:54 +0800</pubDate>
       
       <guid>/posts/deploy/</guid>
-      <description>Github Pages 登录 github 创建 username.github.io 的 repository 下载 hugo 安装文件（MAC) # MAC环境下载hugo brew install hugo # 创建网站 hugo new site &amp;lt;sitename&amp;gt; # 创建主题（下载一个） git clone https://github.com/EmielH/tale-hugo.git themes/tale # 接下来是创建 github 的</description>
+      <description>Guide to host Hugo with Github Page Prerequisites Mac Github 2FA enabled Git installed Github regular personal user (not Enterprise) Github page created Github Create a NEW repo on Github, e.g. blog, so the url for this new repo should be https://github.com/&amp;lt;username&amp;gt;/blog Go to Settings Developer settings Personal access tokens Generate new token Click the options Generate Copy to somewhere safe Now you have a token/password/passphrase. Local brew install hugo</description>
     </item>
     
   </channel>

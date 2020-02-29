@@ -42,7 +42,7 @@ Note that you may want to check your $PATH before you start.</description>
     </item>
     
     <item>
-      <title>Force Github to re-Auth</title>
+      <title>Force Github to Re-Auth</title>
       <link>/posts/force_git_reset_auth/</link>
       <pubDate>Fri, 28 Feb 2020 19:48:53 +0800</pubDate>
       

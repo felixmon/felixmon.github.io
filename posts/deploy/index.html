@@ -81,7 +81,7 @@ git push origin master
 <h2 id="delete-a-post">Delete a post</h2>
 <p><a href="https://gohugo.io/getting-started/usage/#deploy-your-website"target="_blank">It seems that hugo does not support nor care the auto-delete-update</a>, you just have to delete the post yourself, and destroy the whole folder &lsquo;public&rsquo; before you build the site.</p>
 <h2 id="acidentally-delete-the-folder-public">Acidentally delete the folder &lsquo;public&rsquo;</h2>
-<p>If you acidentally delete (e.g. <code>shell rm -rf public</code>) the folder which Hugo uses to place the rendered flies, you probably will encounter the error:</p>
+<p>If you acidentally delete (e.g. <code>rm -rf public</code>) the folder which Hugo uses to place the rendered flies, you probably will encounter this error when you try to git push:</p>
 <p><code>fatal: in unpopulated submodule 'public'</code></p>
 <p>Solutions:</p>
 <pre><code class="language-git" data-lang="git">git rm --cached public

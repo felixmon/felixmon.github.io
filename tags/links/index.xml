@@ -23,7 +23,7 @@
   Income statment overview : http://webapi.cninfo.com.cn/api/stock/p_stock2332?scode=002055&amp;amp;sdate=20190930&amp;amp;edate=20190930&amp;amp;type=071001 method = post
   Cash flow : http://webapi.cninfo.com.cn/api/stock/p_stock2333?scode=002055&amp;amp;sdate=20190331&amp;amp;edate=20190331&amp;amp;type=071001 method = post
   Indicators : http://webapi.cninfo.com.cn/api/stock/p_stock2303?scode=002055&amp;amp;rdate=20190930&amp;amp;type=071001 method = post
-  Wind  visualization: https://wx.wind.com.cn/reactweb/YearReport/index.html?from=singlemessage#/report?windCode=002055.SZ&amp;amp;typeCode=0  </description>
+  Wind  visualization: https://wx.wind.com.cn/reactweb/YearReport/index.html?from=singlemessage#/report?windCode=002055.SZ&amp;amp;typeCode=0  Caixin  Alarming news for listed company: https://entities.caixin.com/api/sentiment/list?busType=15&amp;amp;callback=_jsonpw0q7lraqur  </description>
     </item>
     
   </channel>

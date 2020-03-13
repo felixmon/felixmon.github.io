@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>mongodb on Keep Calm and Carry On Coding</title>
-    <link>/tags/mongodb/</link>
-    <description>Recent content in mongodb on Keep Calm and Carry On Coding</description>
+    <title>PyMongo on Keep Calm and Carry On Coding</title>
+    <link>/tags/pymongo/</link>
+    <description>Recent content in PyMongo on Keep Calm and Carry On Coding</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>MIT License</copyright>
     <lastBuildDate>Sat, 14 Mar 2020 00:54:43 +0800</lastBuildDate>
     
-        <atom:link href="/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/tags/pymongo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,15 +19,6 @@
       
       <guid>/posts/reading-list/</guid>
       <description>Reading List on MongoDB 1.https://zhuanlan.zhihu.com/p/76927835 一文学会matplotlib绘图 2.https://zhuanlan.zhihu.com/p/30029333 3.https://zhuanlan.zhihu.com/p/35816296 4.http://sofasofa.io/forum_main_post.php?postid=1004614 5.https://www.jianshu.com/p/0f8465f094e8 6.https://blog.csdn.net/dongcheng_/article/details/82901191 7.https://blog.csdn.net/gmr2453929471/article/details/78655834 8.https://zhuanlan.zhihu.com/p/44029268 Pandas数据清洗-排序-索引-选取 9.https://zhuanlan.zhihu.com/p/36205119 基于Python的描述性统计实践 10.https://juejin.im/post/5ad1d2836fb9a028dd4eaae6 正确理解和</description>
-    </item>
-    
-    <item>
-      <title>Installaion Guide of MongoDB on MAC</title>
-      <link>/posts/installaion-guide-of-mongodb-on-mac/</link>
-      <pubDate>Tue, 25 Feb 2020 23:22:59 +0800</pubDate>
-      
-      <guid>/posts/installaion-guide-of-mongodb-on-mac/</guid>
-      <description></description>
     </item>
     
   </channel>

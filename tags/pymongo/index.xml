@@ -13,12 +13,12 @@
     
     
     <item>
-      <title>Reading_list</title>
+      <title>Reading list on Matplotlib</title>
       <link>/posts/reading-list/</link>
       <pubDate>Sat, 14 Mar 2020 00:54:43 +0800</pubDate>
       
       <guid>/posts/reading-list/</guid>
-      <description>Reading List on MongoDB 1.https://zhuanlan.zhihu.com/p/76927835 一文学会matplotlib绘图 2.https://zhuanlan.zhihu.com/p/30029333 3.https://zhuanlan.zhihu.com/p/35816296 4.http://sofasofa.io/forum_main_post.php?postid=1004614 5.https://www.jianshu.com/p/0f8465f094e8 6.https://blog.csdn.net/dongcheng_/article/details/82901191 7.https://blog.csdn.net/gmr2453929471/article/details/78655834 8.https://zhuanlan.zhihu.com/p/44029268 Pandas数据清洗-排序-索引-选取 9.https://zhuanlan.zhihu.com/p/36205119 基于Python的描述性统计实践 10.https://juejin.im/post/5ad1d2836fb9a028dd4eaae6 正确理解和</description>
+      <description>Reading List on MongoDB https://zhuanlan.zhihu.com/p/30029333 pandas可视化（1）【官方文档解读】&amp;ndash;基础绘图 https://zhuanlan.zhihu.com/p/35816296 Python初入坑之matplotlib实操 http://sofasofa.io/forum_main_post.php?postid=1004614 怎么对pandas d</description>
     </item>
     
   </channel>

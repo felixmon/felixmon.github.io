@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>MIT License</copyright>
-    <lastBuildDate>Tue, 25 Feb 2020 23:22:59 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 14 Mar 2020 00:54:43 +0800</lastBuildDate>
     
         <atom:link href="/categories/database/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Reading list on Matplotlib</title>
+      <link>/posts/reading-list/</link>
+      <pubDate>Sat, 14 Mar 2020 00:54:43 +0800</pubDate>
+      
+      <guid>/posts/reading-list/</guid>
+      <description>Reading List on MongoDB https://zhuanlan.zhihu.com/p/30029333 pandas可视化（1）【官方文档解读】&amp;ndash;基础绘图 https://zhuanlan.zhihu.com/p/35816296 Python初入坑之matplotlib实操 http://sofasofa.io/forum_main_post.php?postid=1004614 怎么对pandas d</description>
+    </item>
     
     <item>
       <title>Installaion Guide of MongoDB on MAC</title>

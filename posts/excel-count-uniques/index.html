@@ -21,9 +21,9 @@
 <p>countif(range, c8)</p>
 <p>&hellip;</p>
 </blockquote>
-<ol start="2">
-<li>正如上图所示，此时 countif 列会显示每一个 value 的条件和，<strong>包括那些重复的 value，此时每一个重复值的条件和都会大于1，且等于重复次数</strong>，即此时数据陈列满足: 有 n 个 1/n</li>
-<li>接下来就简单了，sum(1/n)即可（必等于1），从而求出唯一值的个数。</li>
+<ol>
+<li>正如上图所示，此时 countif 列会显示每一个 value 的条件和，<strong>包括那些重复的 value，此时每一个重复值的条件和都会大于1，且等于重复次数</strong>，即此时数据陈列满足: 有 n 个 $\frac{1}{n}$</li>
+<li>接下来就简单了，$\sum_ \ \frac{1}{n}$即可（必等于1），从而求出唯一值的个数。</li>
 <li>btw, countif(range,range) 实际上是返回一个二维数组（array）。</li>
 </ol>
 <h3 id="使用函数">使用函数</h3>

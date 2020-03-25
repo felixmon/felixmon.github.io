@@ -18,7 +18,7 @@
       <pubDate>Wed, 25 Mar 2020 18:15:33 +0800</pubDate>
       
       <guid>/posts/excel-count-uniques/</guid>
-      <description>Excel 统计唯一值的个数的方法以及解释 示例数据截图： 一句话解释思路 能实现的核心是： 当 COUNTIF 的 criteria 参数不是传统的单个值，而是 range 本身的时候，i.e. countif(C6:C40,C6:C40) ，函数</description>
+      <description>Excel 统计唯一值的个数的方法以及解释 示例数据截图： 解释思路 能实现的核心是： 当 COUNTIF 的 criteria 参数不是传统的单个值，而是 range 本身的时候，i.e. countif(C6:C40,C6:C40) ，函数会将其</description>
     </item>
     
     <item>

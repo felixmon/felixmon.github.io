@@ -10,7 +10,7 @@
 <p><a target="_blank" rel="noopener noreferrer" 
   href="../images/countif-uniques.png"><img  src="../images/countif-uniques.png"
         alt="Sample"/></a></p>
-<h3 id="一句话解释思路">一句话解释思路</h3>
+<h3 id="解释思路">解释思路</h3>
 <p>能实现的核心是：</p>
 <ol>
 <li>当 COUNTIF 的 criteria 参数不是传统的单个值，而是 range 本身的时候，i.e. countif(C6:C40,C6:C40) ，函数会将其理解为对 range 的每一个 value 代入 criteria 参数并求值，这个 (range,range) 的写法相当于:</li>
@@ -21,7 +21,7 @@
 <p>countif(range, c8)</p>
 <p>&hellip;</p>
 </blockquote>
-<ol>
+<ol start="2">
 <li>正如上图所示，此时 countif 列会显示每一个 value 的条件和，<strong>包括那些重复的 value，此时每一个重复值的条件和都会大于1，且等于重复次数</strong>，即此时数据陈列满足: 有 n 个 $\frac{1}{n}$</li>
 <li>接下来就简单了，$\sum_ \ \frac{1}{n}$即可（必等于1），从而求出唯一值的个数。</li>
 <li>btw, countif(range,range) 实际上是返回一个二维数组（array）。</li>

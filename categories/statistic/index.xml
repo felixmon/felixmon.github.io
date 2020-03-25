@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Statistic on Keep Calm and Carry On Coding</title>
+    <link>/categories/statistic/</link>
+    <description>Recent content in Statistic on Keep Calm and Carry On Coding</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>MIT License</copyright>
+    <lastBuildDate>Wed, 25 Mar 2020 18:15:33 +0800</lastBuildDate>
+    
+        <atom:link href="/categories/statistic/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Excel 统计唯一值步骤分解</title>
+      <link>/posts/excel-count-uniques/</link>
+      <pubDate>Wed, 25 Mar 2020 18:15:33 +0800</pubDate>
+      
+      <guid>/posts/excel-count-uniques/</guid>
+      <description>Excel 统计唯一值步骤分解 示例数据截图： 使用函数 countif sum</description>
+    </item>
+    
+  </channel>
+</rss>

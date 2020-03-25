@@ -5,15 +5,35 @@
     <div class="base-body"><section id="header" class="site header">
     <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><span class="site name">Keep Calm and Carry On Coding</span></a></span>
         <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/categories/">Categories</a><a class="nav item" href="/tags/">Tags</a><a class="nav item" href="/about">About</a></nav></div></span></div></section><div id="content"><div class="article-container"><section class="article header">
-    <h1 class="article title">Excel 统计唯一值步骤分解</h1><p class="article date">Wednesday, March 25, 2020</p></section><article class="article markdown-body"><h1 id="excel-统计唯一值步骤分解">Excel 统计唯一值步骤分解</h1>
+    <h1 class="article title">Excel 统计唯一值步骤分解</h1><p class="article date">Wednesday, March 25, 2020</p></section><article class="article markdown-body"><h1 id="excel-统计唯一值的个数的方法以及解释">Excel 统计唯一值的个数的方法以及解释</h1>
 <p>示例数据截图：</p>
 <p><a target="_blank" rel="noopener noreferrer" 
   href="/static/images/countif-uniques.png"><img  src="/static/images/countif-uniques.png"
         alt="Sample"/></a></p>
+<h3 id="一句话解释思路">一句话解释思路</h3>
+<p>能实现的核心是：</p>
+<ol>
+<li>当 COUNTIF 的 criteria 参数不是传统的单个值，而是 range 本身的时候，i.e. countif(C6:C40,C6:C40) ，函数会将其理解为对 range 的每一个 value 代入 criteria 参数并求值，这个 (range,range) 的写法相当于:</li>
+</ol>
+<blockquote>
+<p>countif(range, c6)</p>
+<p>countif(range, c7)</p>
+<p>countif(range, c8)</p>
+<p>&hellip;</p>
+</blockquote>
+<ol start="2">
+<li>正如上图所示，此时 countif 列会显示每一个 value 的条件和，<strong>包括那些重复的 value，此时每一个重复值的条件和都会大于1，且等于重复次数</strong></li>
+</ol>
+<p>range,
+2.</p>
 <p>使用函数</p>
 <ul>
-<li>countif</li>
-<li>sum</li>
+<li>
+<p>countif</p>
+</li>
+<li>
+<p>sum</p>
+</li>
 </ul>
 </article><section class="article labels"><a class="category" href=/categories/statistic/>Statistic</a><a class="tag" href=/tags/excel/>Excel</a></section><section class="article license">MIT License</section></div><section class="article navigation"><p><a class="link" href="/posts/reading-list/"><span class="li">&rarr;</span>Reading list on Matplotlib</a></p></section></div><section id="footer" class="footer"><div class="footer-wrap">
     <p class="copyright">MIT License</p>
